@@ -1,1147 +1,1242 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico 360° | Optimización de Procesos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        },
-                        accent: {
-                            500: '#10b981',
-                            600: '#059669',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        * { font-family: 'Inter', sans-serif; }
-        .gradient-bg {
-            background: linear-gradient(135deg, #0c4a6e 0%, #075985 50%, #0369a1 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-        .progress-ring {
-            transition: stroke-dashoffset 0.5s ease;
-        }
-        .fade-in {
-            animation: fadeIn 0.5s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .pulse-dot {
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-    </style>
+<!-- saved from url=(0054)file:///C:/Users/Usuario/Downloads/mg360.html#contacto -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motion Group 360 | Eficiencia desde todos los ángulos</title>
+<link href="./Motion Group 360 _ Eficiencia desde todos los ángulos_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg: #060810;
+    --bg2: #0a0d18;
+    --surface: #0f1220;
+    --surface2: #151828;
+    --border: rgba(255,255,255,0.07);
+    --orange: #f97316;
+    --orange2: #fb923c;
+    --orange-glow: rgba(249,115,22,0.18);
+    --blue: #38bdf8;
+    --blue2: #0ea5e9;
+    --blue-glow: rgba(56,189,248,0.15);
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --dim: #475569;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ─── NOISE TEXTURE ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  /* ─── HEADER ─── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(6,8,16,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo-wrap { display: flex; align-items: center; gap: 14px; }
+  .logo-badge {
+    width: 46px; height: 46px;
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; color: white;
+    box-shadow: 0 0 20px var(--orange-glow);
+    position: relative;
+  }
+  .logo-badge::after {
+    content: '';
+    position: absolute;
+    inset: -1px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--blue), var(--orange));
+    z-index: -1;
+    opacity: 0.6;
+  }
+  .logo-text { line-height: 1.2; }
+  .logo-text strong {
+    display: block; font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: 17px; letter-spacing: 0.02em;
+    background: linear-gradient(90deg, #fff 60%, var(--orange));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .logo-text span { font-size: 11px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
+
+  nav { display: flex; gap: 32px; align-items: center; }
+  nav a {
+    color: var(--muted); font-size: 14px; text-decoration: none; font-weight: 500;
+    transition: color 0.2s; letter-spacing: 0.02em;
+  }
+  nav a:hover { color: var(--text); }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--orange), #ea580c);
+    color: white !important; padding: 9px 20px; border-radius: 8px;
+    font-weight: 600 !important; font-size: 13px !important;
+    box-shadow: 0 0 16px var(--orange-glow);
+    transition: box-shadow 0.2s, transform 0.2s !important;
+  }
+  .nav-cta:hover { box-shadow: 0 0 28px rgba(249,115,22,0.4); transform: translateY(-1px); }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    padding: 100px 40px;
+  }
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+  .orb1 { width: 600px; height: 600px; background: radial-gradient(circle, rgba(249,115,22,0.22) 0%, transparent 70%); top: -100px; right: -100px; }
+  .orb2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(56,189,248,0.18) 0%, transparent 70%); bottom: -100px; left: -100px; }
+  .orb3 { width: 300px; height: 300px; background: radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+  /* Animated ring */
+  .hero-ring {
+    position: absolute;
+    width: 700px; height: 700px;
+    border: 1px solid rgba(249,115,22,0.1);
+    border-radius: 50%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: spin 30s linear infinite;
+  }
+  .hero-ring::before {
+    content: '';
+    position: absolute;
+    width: 12px; height: 12px;
+    background: var(--orange);
+    border-radius: 50%;
+    top: -6px; left: 50%;
+    box-shadow: 0 0 16px var(--orange);
+  }
+  .hero-ring2 {
+    position: absolute;
+    width: 500px; height: 500px;
+    border: 1px solid rgba(56,189,248,0.08);
+    border-radius: 50%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: spin 20s linear infinite reverse;
+  }
+  @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+  .hero-content { position: relative; z-index: 2; text-align: center; max-width: 860px; }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 8px 16px; border-radius: 100px; margin-bottom: 32px;
+    font-size: 12px; color: var(--orange); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-tag .dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.5;transform:scale(0.8);} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 9vw, 110px);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  h1 .line-orange {
+    background: linear-gradient(90deg, var(--orange), var(--orange2), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    display: block;
+  }
+  .hero-sub {
+    font-size: 18px; color: var(--muted); max-width: 560px; margin: 0 auto 40px;
+    line-height: 1.7; font-weight: 300;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-btns {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    color: white; padding: 14px 32px; border-radius: 10px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600;
+    box-shadow: 0 0 28px var(--orange-glow); transition: all 0.25s;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(249,115,22,0.4); }
+  .btn-outline {
+    background: transparent; color: var(--text); padding: 14px 32px; border-radius: 10px;
+    border: 1px solid var(--border); cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 500; transition: all 0.25s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px; backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.04);
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.07); }
+
+  /* STATS */
+  .stats-bar {
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 28px 40px;
+  }
+  .stats-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 0.04em;
+    background: linear-gradient(135deg, var(--orange), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stat-label { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; }
+
+  /* ─── SECTION COMMON ─── */
+  section { padding: 100px 40px; position: relative; z-index: 1; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11px; color: var(--orange); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .section-tag::before { content: ''; width: 20px; height: 1px; background: var(--orange); }
+  h2 {
+    font-family: 'Syne', sans-serif; font-size: clamp(32px, 4vw, 52px); font-weight: 800;
+    line-height: 1.1; margin-bottom: 16px; letter-spacing: -0.01em;
+  }
+  .section-desc { color: var(--muted); font-size: 17px; line-height: 1.7; max-width: 600px; font-weight: 300; }
+
+  /* ─── MODULE TABS ─── */
+  .modules-nav {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 56px; margin-top: 48px;
+  }
+  .mod-tab {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 20px; border-radius: 100px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--muted); font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+  }
+  .mod-tab .tab-icon { font-size: 16px; }
+  .mod-tab:hover { border-color: rgba(249,115,22,0.3); color: var(--text); }
+  .mod-tab.active {
+    background: linear-gradient(135deg, rgba(249,115,22,0.2), rgba(249,115,22,0.05));
+    border-color: var(--orange); color: var(--text);
+    box-shadow: 0 0 20px rgba(249,115,22,0.1);
+  }
+
+  /* ─── MODULE PANEL ─── */
+  .module-panel { display: none; }
+  .module-panel.active { display: block; animation: fadeUp 0.4s ease; }
+
+  .mod-header {
+    display: flex; align-items: flex-start; gap: 24px; margin-bottom: 48px;
+    padding: 32px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 20px;
+    position: relative; overflow: hidden;
+  }
+  .mod-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--orange-glow), transparent 60%);
+    pointer-events: none;
+  }
+  .mod-icon {
+    width: 72px; height: 72px; border-radius: 18px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  .mod-header-text h3 {
+    font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; margin-bottom: 8px;
+  }
+  .mod-header-text p { color: var(--muted); font-size: 16px; line-height: 1.7; font-weight: 300; }
+
+  /* Services grid */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;
+  }
+  .service-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px;
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--orange), var(--blue));
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .service-card:hover { border-color: rgba(249,115,22,0.25); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+  .service-card:hover::after { opacity: 1; }
+  .card-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 18px;
+    background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.2);
+  }
+  .card-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  .card-desc { color: var(--muted); font-size: 14px; line-height: 1.65; font-weight: 300; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+  .tag {
+    font-size: 11px; padding: 4px 10px; border-radius: 100px;
+    background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.15);
+    color: var(--blue); font-weight: 500;
+  }
+  .tag-orange {
+    background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.15); color: var(--orange);
+  }
+
+  /* ─── DIAGNOSTIC ─── */
+  #diagnostico { background: var(--surface); }
+  .diag-wrap {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 24px;
+    overflow: hidden; box-shadow: 0 0 80px rgba(0,0,0,0.5);
+  }
+  .diag-top {
+    background: linear-gradient(135deg, rgba(249,115,22,0.15) 0%, rgba(56,189,248,0.08) 100%);
+    padding: 40px 48px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .diag-badge {
+    font-family: 'Bebas Neue', sans-serif; font-size: 48px; line-height: 1;
+    background: linear-gradient(135deg, var(--orange), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .diag-top-text h3 { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; }
+  .diag-top-text p { color: var(--muted); font-size: 15px; margin-top: 4px; }
+
+  .diag-body { padding: 48px; }
+
+  /* Progress */
+  .prog-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+  .prog-track { height: 4px; background: rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; margin-bottom: 36px; }
+  .prog-fill {
+    height: 100%; border-radius: 4px;
+    background: linear-gradient(90deg, var(--orange), var(--blue));
+    transition: width 0.5s ease;
+  }
+
+  /* Step dots */
+  .step-dots { display: flex; gap: 6px; justify-content: center; margin-bottom: 40px; }
+  .step-dot {
+    height: 6px; width: 6px; border-radius: 6px;
+    background: rgba(255,255,255,0.15); transition: all 0.3s;
+  }
+  .step-dot.active { width: 24px; background: var(--orange); }
+  .step-dot.done { background: rgba(249,115,22,0.4); }
+
+  /* Form */
+  .form-step { display: none; }
+  .form-step.active { display: block; animation: fadeUp 0.4s ease; }
+
+  .form-step-header h4 { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+  .form-step-header p { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 8px; font-weight: 500; letter-spacing: 0.03em; }
+  .field input, .field select, .field textarea {
+    width: 100%; background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px; color: var(--text);
+    font-family: 'DM Sans', sans-serif; font-size: 14px; transition: border-color 0.2s;
+    outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,115,22,0.08);
+  }
+  .field input::placeholder, .field textarea::placeholder { color: var(--dim); }
+  .field select option { background: var(--surface); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* Radio/checkbox options */
+  .options-list { display: flex; flex-direction: column; gap: 8px; }
+  .option-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
+    cursor: pointer; transition: all 0.2s; background: rgba(255,255,255,0.02);
+  }
+  .option-item:hover { border-color: rgba(249,115,22,0.3); background: rgba(249,115,22,0.04); }
+  .option-item input { accent-color: var(--orange); width: 16px; height: 16px; cursor: pointer; }
+  .option-item span { font-size: 14px; color: var(--muted); }
+  .option-item:has(input:checked) {
+    border-color: var(--orange); background: rgba(249,115,22,0.06);
+  }
+  .option-item:has(input:checked) span { color: var(--text); }
+  .q-label { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 12px; margin-top: 24px; }
+
+  /* Nav buttons */
+  .diag-nav { display: flex; justify-content: space-between; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .btn-back {
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    padding: 11px 24px; border-radius: 8px; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 14px; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+  }
+  .btn-back:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+  .btn-next {
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    color: white; padding: 12px 28px; border-radius: 8px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600;
+    box-shadow: 0 0 20px var(--orange-glow); transition: all 0.2s;
+    display: flex; align-items: center; gap: 8px; margin-left: auto;
+  }
+  .btn-next:hover { box-shadow: 0 0 32px rgba(249,115,22,0.4); transform: translateY(-1px); }
+
+  /* Results */
+  #resultsPanel { display: none; animation: fadeUp 0.5s ease; }
+  .res-score-ring { display: flex; flex-direction: column; align-items: center; margin-bottom: 48px; }
+  .res-score-ring svg { filter: drop-shadow(0 0 16px rgba(249,115,22,0.4)); }
+  .score-label { font-family: 'Bebas Neue', sans-serif; font-size: 56px; margin-top: -8px; }
+  .score-sub { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .area-scores { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; margin-bottom: 40px; }
+  .area-score-item {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px;
+  }
+  .area-name { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .area-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+  .area-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--orange), var(--blue)); transition: width 1s ease; }
+  .area-pct { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .recs-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 24px; }
+  .rec-block { margin-bottom: 28px; }
+  .rec-area { font-size: 13px; font-weight: 600; color: var(--orange); margin-bottom: 10px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .rec-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .rec-list li {
+    display: flex; gap: 10px; font-size: 14px; color: var(--muted); align-items: flex-start;
+  }
+  .rec-list li::before { content: '→'; color: var(--orange); flex-shrink: 0; font-weight: 700; }
+  .res-cta {
+    background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(56,189,248,0.08));
+    border: 1px solid rgba(249,115,22,0.25); border-radius: 16px; padding: 32px;
+    text-align: center; margin-top: 36px;
+  }
+  .res-cta h4 { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .res-cta p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .res-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ─── CONTACT ─── */
+  #contacto { background: var(--bg); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+  .contact-info h2 { margin-bottom: 12px; }
+  .contact-info p { color: var(--muted); line-height: 1.7; margin-bottom: 36px; font-size: 16px; }
+  .contact-methods { display: flex; flex-direction: column; gap: 16px; }
+  .contact-method {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  }
+  .contact-method-icon {
+    width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .contact-method-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+  .contact-method-text span { font-size: 13px; color: var(--muted); }
+  .contact-method a { color: var(--orange); text-decoration: none; font-size: 13px; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 40px; text-align: center;
+  }
+  footer p { color: var(--dim); font-size: 13px; }
+  footer strong { color: var(--muted); }
+
+  /* ─── SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: rgba(249,115,22,0.3); border-radius: 3px; }
+
+  @media (max-width: 768px) {
+    header { padding: 0 20px; }
+    nav { display: none; }
+    section { padding: 64px 20px; }
+    h1 { font-size: 56px; }
+    .stats-inner { grid-template-columns: repeat(2,1fr); }
+    .services-grid { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .area-scores { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .diag-body { padding: 28px 24px; }
+    .diag-top { padding: 24px; }
+    .hero { padding: 80px 20px; }
+  }
+</style>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    
-    <!-- Header -->
-    <header class="gradient-bg text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                    </svg>
-                </div>
-                <div>
-                    <h1 class="font-bold text-lg">Optimización 360°</h1>
-                    <p class="text-xs text-blue-200">Transformación de Procesos</p>
-                </div>
-            </div>
-            <nav class="hidden md:flex gap-6 text-sm">
-                <a href="#servicios" class="hover:text-blue-200 transition">Servicios</a>
-                <a href="#diagnostico" class="hover:text-blue-200 transition">Diagnóstico</a>
-                <a href="#contacto" class="hover:text-blue-200 transition">Contacto</a>
-            </nav>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-wrap">
+    <div class="logo-badge">MG3</div>
+    <div class="logo-text">
+      <strong>Motion Group 360</strong>
+      <span>Eficiencia desde todos los ángulos</span>
+    </div>
+  </div>
+  <nav>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360.html#servicios">Servicios</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360.html#diagnostico">Diagnóstico</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360.html#contacto">Contacto</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360.html#diagnostico" class="nav-cta">Diagnóstico Gratis</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Diagnóstico gratuito disponible
+    </div>
+    <h1>
+      EFICIENCIA<br>
+      <span class="line-orange">DESDE TODOS</span>
+      LOS ÁNGULOS
+    </h1>
+    <p class="hero-sub">Transformamos tu empresa con soluciones integrales en tecnología, operaciones, calidad y administración.</p>
+    <div class="hero-btns">
+      <a href="file:///C:/Users/Usuario/Downloads/mg360.html#diagnostico" class="btn-primary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        Diagnóstico 360°
+      </a>
+      <a href="file:///C:/Users/Usuario/Downloads/mg360.html#servicios" class="btn-outline">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        Ver servicios
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div><div class="stat-num">360°</div><div class="stat-label">Visión Integral</div></div>
+    <div><div class="stat-num">4</div><div class="stat-label">Módulos de Servicio</div></div>
+    <div><div class="stat-num">100%</div><div class="stat-label">Personalizado</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-label">Soporte Continuo</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicios">
+  <div class="section-inner">
+    <div class="section-tag">Nuestros Módulos</div>
+    <h2>Soluciones integrales<br>para tu empresa</h2>
+    <p class="section-desc">Cuatro módulos especializados que cubren cada dimensión de tu operación, desde la tecnología hasta la gestión humana.</p>
+
+    <!-- MODULE TABS -->
+    <div class="modules-nav">
+      <div class="mod-tab" onclick="switchModule(0)"><span class="tab-icon">💻</span> Tecnología &amp; Digital</div>
+      <div class="mod-tab" onclick="switchModule(1)"><span class="tab-icon">⚙️</span> Operaciones &amp; Calidad</div>
+      <div class="mod-tab active" onclick="switchModule(2)"><span class="tab-icon">🤝</span> Administración &amp; RRHH</div>
+      <div class="mod-tab" onclick="switchModule(3)"><span class="tab-icon">🤖</span> Automatización &amp; IA</div>
+    </div>
+
+    <!-- MODULE 0: TECH -->
+    <div class="module-panel" id="mod0">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);">💻</div>
+        <div class="mod-header-text">
+          <h3>Tecnología &amp; Transformación Digital</h3>
+          <p>Desarrollamos soluciones tecnológicas a medida: aplicaciones web, móviles y de escritorio, junto con estrategias de transformación digital que modernizan tu operación y potencian el crecimiento.</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="gradient-bg text-white py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-6">
-                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
-                <span class="text-sm">Diagnóstico gratuito disponible</span>
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Transformamos tus procesos<br/>
-                <span class="text-blue-300">en ventajas competitivas</span>
-            </h2>
-            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Analizamos y optimizamos cada área de tu operación con una visión integral de 360°, 
-                convirtiendo procesos manuales en flujos automatizados y eficientes.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button onclick="scrollToSection('diagnostico')" class="bg-white text-brand-800 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition shadow-lg">
-                    Iniciar Diagnóstico Gratuito
-                </button>
-                <button onclick="scrollToSection('servicios')" class="border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition">
-                    Ver Servicios
-                </button>
-            </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">🌐</div>
+          <div class="card-title">Desarrollo Web</div>
+          <div class="card-desc">Aplicaciones web personalizadas con tecnologías de vanguardia para rendimiento y escalabilidad óptimos.</div>
+          <div class="card-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <section class="bg-white py-8 px-6 shadow-sm">
-        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <div class="text-3xl font-bold text-brand-700">360°</div>
-                <div class="text-gray-500 text-sm">Visión Integral</div>
-            </div>
-            <div>
-                <div class="text-3xl font-bold text-brand-700">4</div>
-                <div class="text-gray-500 text-sm">Áreas de Expertise</div>
-            </div>
-            <div>
-                <div class="text-3xl font-bold text-brand-700">100%</div>
-                <div class="text-gray-500 text-sm">Personalizado</div>
-            </div>
-            <div>
-                <div class="text-3xl font-bold text-brand-700">24/7</div>
-                <div class="text-gray-500 text-sm">Monitoreo en Tiempo Real</div>
-            </div>
+        <div class="service-card">
+          <div class="card-icon">📱</div>
+          <div class="card-title">Desarrollo Móvil</div>
+          <div class="card-desc">Apps nativas y multiplataforma con experiencias de usuario excepcionales para iOS y Android.</div>
+          <div class="card-tags">
+            <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Swift</span><span class="tag">Kotlin</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Servicios Section -->
-    <section id="servicios" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Nuestros Servicios</span>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Áreas de Especialización</h3>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Evaluamos cada área y operación de forma estratégica, identificando oportunidades de mejora y automatización.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Logística -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
-                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Logística</h4>
-                    <p class="text-gray-600 mb-4">
-                        Optimizamos rutas, tiempos de entrega y coordinación de transportes para maximizar la eficiencia operativa.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Optimización de rutas
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Tracking en tiempo real
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Gestión de flotas
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Inventarios -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
-                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Inventarios</h4>
-                    <p class="text-gray-600 mb-4">
-                        Control preciso de stock, alertas automáticas y dashboards en tiempo real para una gestión sin errores.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Control de stock automatizado
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Alertas de reabastecimiento
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Dashboards en tiempo real
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Producción -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
-                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Producción</h4>
-                    <p class="text-gray-600 mb-4">
-                        Planificación eficiente, control de calidad y reducción de tiempos muertos en líneas de producción.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Planificación de producción
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Control de calidad
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Reducción de tiempos muertos
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Cadena de Suministro -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-gray-100">
-                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-                        </svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Cadena de Suministro</h4>
-                    <p class="text-gray-600 mb-4">
-                        Integración end-to-end de proveedores, gestión de compras y visibilidad total de la cadena.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Gestión de proveedores
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Automatización de compras
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Visibilidad end-to-end
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="service-card">
+          <div class="card-icon">🖥️</div>
+          <div class="card-title">Desarrollo de Software</div>
+          <div class="card-desc">Soluciones empresariales de nivel profesional diseñadas para optimizar las operaciones de tu negocio.</div>
+          <div class="card-tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">.NET</span><span class="tag">AWS</span><span class="tag">Docker</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Diagnóstico Section -->
-    <section id="diagnostico" class="py-20 px-6 bg-gradient-to-b from-gray-100 to-white">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Evaluación Gratuita</span>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Diagnóstico 360°</h3>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Responde estas preguntas y obtén un análisis personalizado de tu operación con recomendaciones específicas.
-                </p>
-            </div>
-
-            <!-- Diagnostic Form Container -->
-            <div id="diagnosticContainer" class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                
-                <!-- Progress Bar -->
-                <div class="mb-8">
-                    <div class="flex justify-between text-sm text-gray-500 mb-2">
-                        <span>Progreso</span>
-                        <span id="progressText">0%</span>
-                    </div>
-                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div id="progressBar" class="h-full bg-gradient-to-r from-brand-500 to-brand-600 transition-all duration-500" style="width: 0%"></div>
-                    </div>
-                </div>
-
-                <!-- Step Indicator -->
-                <div id="stepIndicator" class="flex justify-center gap-2 mb-8">
-                    <!-- Generated by JS -->
-                </div>
-
-                <!-- Form Steps -->
-                <div id="formSteps">
-                    <!-- Step 0: Contact Info -->
-                    <div class="step fade-in" data-step="0">
-                        <h4 class="text-xl font-bold text-gray-900 mb-2">Información de Contacto</h4>
-                        <p class="text-gray-500 mb-6">Para enviarte tu diagnóstico personalizado</p>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Nombre completo *</label>
-                                <input type="text" id="contactName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" placeholder="Tu nombre">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Empresa *</label>
-                                <input type="text" id="contactCompany" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" placeholder="Nombre de tu empresa">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                                <input type="email" id="contactEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" placeholder="tu@email.com">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">WhatsApp / Teléfono</label>
-                                <input type="tel" id="contactPhone" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" placeholder="+57 300 000 0000">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Sector / Industria</label>
-                                <select id="contactIndustry" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition">
-                                    <option value="">Selecciona tu sector</option>
-                                    <option value="manufactura">Manufactura</option>
-                                    <option value="comercio">Comercio / Retail</option>
-                                    <option value="alimentos">Alimentos y Bebidas</option>
-                                    <option value="farmaceutica">Farmacéutica</option>
-                                    <option value="tecnologia">Tecnología</option>
-                                    <option value="construccion">Construcción</option>
-                                    <option value="agro">Agroindustria</option>
-                                    <option value="servicios">Servicios</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 1: Logística -->
-                    <div class="step fade-in hidden" data-step="1">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Logística</h4>
-                                <p class="text-gray-500 text-sm">Evalúa tu gestión logística actual</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Cómo gestionas actualmente las rutas de entrega?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q1" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Manualmente, sin herramientas digitales</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q1" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Excel o hojas de cálculo básicas</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q1" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Software básico de gestión</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q1" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sistema integrado con optimización de rutas</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Tienes visibilidad en tiempo real de tus envíos?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q2" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">No, dependemos de llamadas o mensajes</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q2" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Parcialmente, con actualizaciones manuales</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q2" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sí, pero solo para algunos envíos</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q2" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sí, tracking completo en tiempo real</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 2: Inventarios -->
-                    <div class="step fade-in hidden" data-step="2">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Inventarios</h4>
-                                <p class="text-gray-500 text-sm">Evalúa tu control de inventario</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Cómo llevas el control de tu inventario?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q3" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Conteo manual / libretas</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q3" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Excel sin fórmulas avanzadas</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q3" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Software básico de inventario</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q3" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sistema integrado con alertas automáticas</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Con qué frecuencia tienes problemas de faltantes o excesos?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q4" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Constantemente, es un problema grave</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q4" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Frecuentemente, varias veces al mes</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q4" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Ocasionalmente, algunas veces al año</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q4" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Raramente, tenemos buen control</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 3: Producción -->
-                    <div class="step fade-in hidden" data-step="3">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Producción</h4>
-                                <p class="text-gray-500 text-sm">Evalúa tus procesos productivos</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Cómo planificas tu producción?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q5" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Según la demanda del día, sin planificación</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q5" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Planificación semanal básica</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q5" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">MRP o sistema de planificación formal</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q5" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sistema integrado con pronósticos y BI</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Qué porcentaje de tiempos muertos estimas en tu operación?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q6" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Más del 30% - Muy alto</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q6" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Entre 15% y 30% - Alto</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q6" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Entre 5% y 15% - Moderado</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q6" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Menos del 5% - Bien controlado</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 4: Cadena de Suministro -->
-                    <div class="step fade-in hidden" data-step="4">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Cadena de Suministro</h4>
-                                <p class="text-gray-500 text-sm">Evalúa tu gestión de proveedores</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Cómo gestionas las órdenes de compra con proveedores?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q7" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Por teléfono, WhatsApp o email sin formato</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q7" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Formatos en Excel enviados por email</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q7" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Sistema de compras interno básico</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q7" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Portal de proveedores integrado</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Tienes visibilidad del desempeño de tus proveedores?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q8" value="1" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">No, solo sabemos cuando hay problemas</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q8" value="2" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Evaluación informal/subjetiva</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q8" value="3" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">KPIs básicos medidos manualmente</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q8" value="4" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Dashboard con KPIs automatizados</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 5: Prioridades -->
-                    <div class="step fade-in hidden" data-step="5">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 bg-rose-100 rounded-lg flex items-center justify-center">
-                                <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-gray-900">Prioridades y Objetivos</h4>
-                                <p class="text-gray-500 text-sm">¿Qué es lo más importante para ti?</p>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Cuál es tu principal dolor operativo actualmente?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="checkbox" name="q9" value="errores" class="w-4 h-4 text-brand-600 rounded">
-                                        <span class="text-gray-700">Errores frecuentes en procesos manuales</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="checkbox" name="q9" value="visibilidad" class="w-4 h-4 text-brand-600 rounded">
-                                        <span class="text-gray-700">Falta de visibilidad en tiempo real</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="checkbox" name="q9" value="tiempos" class="w-4 h-4 text-brand-600 rounded">
-                                        <span class="text-gray-700">Tiempos de respuesta lentos</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="checkbox" name="q9" value="costos" class="w-4 h-4 text-brand-600 rounded">
-                                        <span class="text-gray-700">Costos operativos elevados</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="checkbox" name="q9" value="integracion" class="w-4 h-4 text-brand-600 rounded">
-                                        <span class="text-gray-700">Sistemas desconectados entre áreas</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">¿Qué tan pronto necesitas ver resultados?</label>
-                                <div class="space-y-2">
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q10" value="urgente" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Urgente - Lo antes posible</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q10" value="trimestre" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Este trimestre</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q10" value="semestre" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">En los próximos 6 meses</span>
-                                    </label>
-                                    <label class="flex items-center gap-3 p-3 border border-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
-                                        <input type="radio" name="q10" value="explorando" class="w-4 h-4 text-brand-600">
-                                        <span class="text-gray-700">Estoy explorando opciones</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="question-group">
-                                <label class="block text-sm font-medium text-gray-700 mb-3">Comentarios adicionales (opcional)</label>
-                                <textarea id="comments" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition" placeholder="Cuéntanos más sobre tus desafíos o necesidades específicas..."></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Buttons -->
-                <div class="flex justify-between mt-8 pt-6 border-t border-gray-200">
-                    <button id="prevBtn" onclick="changeStep(-1)" class="hidden px-6 py-3 text-gray-600 hover:text-gray-900 font-medium transition flex items-center gap-2">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                        </svg>
-                        Anterior
-                    </button>
-                    <button id="nextBtn" onclick="changeStep(1)" class="ml-auto px-8 py-3 bg-brand-600 text-white rounded-xl font-semibold hover:bg-brand-700 transition flex items-center gap-2">
-                        Siguiente
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Results Container (Hidden initially) -->
-            <div id="resultsContainer" class="hidden">
-                <!-- Will be populated by JS -->
-            </div>
+        <div class="service-card">
+          <div class="card-icon">🔄</div>
+          <div class="card-title">Transformación Digital</div>
+          <div class="card-desc">Estrategias digitales integrales para modernizar operaciones, mejorar experiencias y escalar el negocio.</div>
+          <div class="card-tags">
+            <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Power BI</span><span class="tag">Kubernetes</span>
+          </div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contacto" class="py-20 px-6 gradient-bg text-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para transformar tu operación?</h3>
-            <p class="text-xl text-blue-100 mb-8">
-                Agenda una consulta gratuita y descubre cómo podemos ayudarte.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/573000000000" target="_blank" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    Escríbenos por WhatsApp
-                </a>
-                <a href="mailto:contacto@empresa.com" class="border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition">
-                    Enviar Email
-                </a>
-            </div>
+        <div class="service-card">
+          <div class="card-icon">👥</div>
+          <div class="card-title">Aumento de Personal</div>
+          <div class="card-desc">Equipos tecnológicos dedicados y talento bajo demanda para reforzar tus proyectos digitales.</div>
+          <div class="card-tags">
+            <span class="tag">Data Analysts</span><span class="tag">DevOps</span><span class="tag">QA Specialists</span><span class="tag">PM</span>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center gap-3 mb-4 md:mb-0">
-                    <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                        </svg>
-                    </div>
-                    <span class="text-white font-semibold">Optimización 360°</span>
-                </div>
-                <p class="text-sm">© 2025 Todos los derechos reservados.</p>
-            </div>
+        <div class="service-card">
+          <div class="card-icon">📊</div>
+          <div class="card-title">Implementación de Sistemas</div>
+          <div class="card-desc">Sistemas de información a medida para gestionar y optimizar todos los procesos de tu negocio.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">ERP</span><span class="tag tag-orange">CRM</span><span class="tag tag-orange">BI</span><span class="tag tag-orange">Dashboards</span>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
 
-    <script>
-        // State
-        let currentStep = 0;
-        const totalSteps = 6;
-        const answers = {};
+    <!-- MODULE 1: OPERATIONS -->
+    <div class="module-panel" id="mod1">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);">⚙️</div>
+        <div class="mod-header-text">
+          <h3>Operaciones, Calidad &amp; Procesos</h3>
+          <p>Optimizamos tu operación de punta a punta: desde la inocuidad y el cumplimiento normativo hasta la eficiencia productiva, logística e inventarios, con enfoque Lean y Six Sigma.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">🧪</div>
+          <div class="card-title">Calidad e Inocuidad</div>
+          <div class="card-desc">BPM, Plan de Saneamiento, programas prerrequisito INVIMA, auditorías sanitarias y diagnósticos de cumplimiento normativo.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">BPM</span><span class="tag tag-orange">INVIMA</span><span class="tag tag-orange">Auditorías</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">📈</div>
+          <div class="card-title">Mejora de Procesos</div>
+          <div class="card-desc">Optimización con metodología Lean/Six Sigma, reducción de desperdicios y diseño e implementación de indicadores KPI.</div>
+          <div class="card-tags">
+            <span class="tag">Lean</span><span class="tag">Six Sigma</span><span class="tag">KPIs</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🏭</div>
+          <div class="card-title">Producción y Operaciones</div>
+          <div class="card-desc">Planeación y control de producción, balanceo de líneas, análisis y optimización de costos operativos.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">MRP</span><span class="tag tag-orange">OEE</span><span class="tag tag-orange">Balanceo</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🚚</div>
+          <div class="card-title">Logística e Inventarios</div>
+          <div class="card-desc">Control y optimización de inventarios, mejora de almacenamiento, distribución eficiente y trazabilidad.</div>
+          <div class="card-tags">
+            <span class="tag">WMS</span><span class="tag">Trazabilidad</span><span class="tag">Control Stock</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">📋</div>
+          <div class="card-title">Documentación y Cumplimiento</div>
+          <div class="card-desc">Diseño de manuales, procesos y formatos. Aseguramiento del cumplimiento normativo y estructuración organizacional.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">ISO</span><span class="tag tag-orange">Manuales</span><span class="tag tag-orange">Normativas</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🎓</div>
+          <div class="card-title">Capacitación</div>
+          <div class="card-desc">Formación en BPM, calidad e inocuidad. Programas de capacitación continua y desarrollo del talento operativo.</div>
+          <div class="card-tags">
+            <span class="tag">BPM</span><span class="tag">Calidad</span><span class="tag">Inocuidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            updateStepIndicator();
-            updateProgress();
-        });
+    <!-- MODULE 2: ADMIN/HR -->
+    <div class="module-panel active" id="mod2">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);">🤝</div>
+        <div class="mod-header-text">
+          <h3>Administración &amp; Recursos Humanos</h3>
+          <p>Acompañamos a empresas y emprendedores en la gestión administrativa, contable y de talento humano. Un servicio confiable, organizado y adaptado, para que te enfoques en crecer.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">👤</div>
+          <div class="card-title">Seguridad Social &amp; Nómina</div>
+          <div class="card-desc">Afiliaciones, inconsistencias, liquidación y pago de planilla PILA. Nómina, contratación, liquidación y prestaciones sociales.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">PILA</span><span class="tag tag-orange">Nómina</span><span class="tag tag-orange">Prestaciones</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🩺</div>
+          <div class="card-title">Dotación &amp; Incapacidades</div>
+          <div class="card-desc">Gestión de dotación, radicación y cobro de incapacidades ante EPS y ARL. Seguimiento completo del proceso.</div>
+          <div class="card-tags">
+            <span class="tag">EPS</span><span class="tag">ARL</span><span class="tag">Incapacidades</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">💡</div>
+          <div class="card-title">Asesoría Talento Humano</div>
+          <div class="card-desc">Asesoría general para el área de Talento Humano: políticas, procesos disciplinarios, clima organizacional.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">RRHH</span><span class="tag tag-orange">Políticas</span><span class="tag tag-orange">Clima Org.</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🧾</div>
+          <div class="card-title">Facturación y Recibos</div>
+          <div class="card-desc">Gestión de facturación electrónica, recibos de caja y documentos soporte de egreso (DSE) con precisión.</div>
+          <div class="card-tags">
+            <span class="tag">DIAN</span><span class="tag">DSE</span><span class="tag">Factura Elect.</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">💰</div>
+          <div class="card-title">Pagos y Caja Menor</div>
+          <div class="card-desc">Manejo de pagos a proveedores, administración de caja menor y conciliaciones para una operación transparente.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">Proveedores</span><span class="tag tag-orange">Caja Menor</span><span class="tag tag-orange">Conciliación</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">📥</div>
+          <div class="card-title">Gestión de Cartera</div>
+          <div class="card-desc">Seguimiento y cobro de cartera, reportes de antigüedad de saldos y estrategias de recuperación de cuentas.</div>
+          <div class="card-tags">
+            <span class="tag">Cobro</span><span class="tag">Cartera</span><span class="tag">Reportes</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
+    <!-- MODULE 3: AUTOMATION/AI -->
+    <div class="module-panel" id="mod3">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);">🤖</div>
+        <div class="mod-header-text">
+          <h3>Automatización, IA &amp; Marketing Digital</h3>
+          <p>Integramos inteligencia artificial y automatización a tu negocio para eliminar tareas repetitivas, potenciar la toma de decisiones y amplificar tu presencia digital.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Automatización de Procesos</div>
+          <div class="card-desc">Identificamos y automatizamos flujos repetitivos con RPA y herramientas low-code para liberar tiempo y reducir errores.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">RPA</span><span class="tag tag-orange">Zapier</span><span class="tag tag-orange">Make</span><span class="tag tag-orange">n8n</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🧠</div>
+          <div class="card-title">IA Integrada al Negocio</div>
+          <div class="card-desc">Implementación de modelos de IA para análisis predictivo, asistentes inteligentes, chatbots y toma de decisiones basada en datos.</div>
+          <div class="card-tags">
+            <span class="tag">ChatGPT API</span><span class="tag">ML</span><span class="tag">LLMs</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">📣</div>
+          <div class="card-title">Marketing Digital</div>
+          <div class="card-desc">Estrategias de marketing digital, pauta en redes sociales, SEO, email marketing y generación de leads cualificados.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">Meta Ads</span><span class="tag tag-orange">SEO</span><span class="tag tag-orange">Email Mktg</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🔁</div>
+          <div class="card-title">Mejora Continua</div>
+          <div class="card-desc">Monitoreo de KPIs en tiempo real, cultura de mejora continua, ciclos PDCA y tableros de control inteligentes.</div>
+          <div class="card-tags">
+            <span class="tag">PDCA</span><span class="tag">Power BI</span><span class="tag">Dashboards</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Integración de Sistemas</div>
+          <div class="card-desc">Conectamos tus plataformas y herramientas para que la información fluya sin fricciones entre áreas y sistemas.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">APIs</span><span class="tag tag-orange">Webhooks</span><span class="tag tag-orange">ETL</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="card-icon">📡</div>
+          <div class="card-title">Analítica &amp; Business Intelligence</div>
+          <div class="card-desc">Transformamos datos en decisiones. Diseñamos dashboards, modelos de datos y reportes ejecutivos accionables.</div>
+          <div class="card-tags">
+            <span class="tag">Power BI</span><span class="tag">Looker</span><span class="tag">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        function updateStepIndicator() {
-            const container = document.getElementById('stepIndicator');
-            container.innerHTML = '';
-            for (let i = 0; i < totalSteps; i++) {
-                const dot = document.createElement('div');
-                dot.className = `w-3 h-3 rounded-full transition-all ${i === currentStep ? 'bg-brand-600 w-8' : i < currentStep ? 'bg-brand-400' : 'bg-gray-300'}`;
-                container.appendChild(dot);
-            }
-        }
+<!-- DIAGNOSTIC -->
+<section id="diagnostico">
+  <div class="section-inner">
+    <div class="section-tag">Evaluación Gratuita</div>
+    <h2>Diagnóstico 360°</h2>
+    <p class="section-desc" style="margin-bottom:48px;">Responde estas preguntas y obtén un análisis personalizado con recomendaciones específicas para tu operación.</p>
 
-        function updateProgress() {
-            const progress = ((currentStep) / (totalSteps - 1)) * 100;
-            document.getElementById('progressBar').style.width = `${progress}%`;
-            document.getElementById('progressText').textContent = `${Math.round(progress)}%`;
-        }
+    <div class="diag-wrap">
+      <div class="diag-top">
+        <div class="diag-badge">360</div>
+        <div class="diag-top-text">
+          <h3>Diagnóstico de Madurez Operativa</h3>
+          <p>Evaluación en 4 dimensiones · Resultado inmediato · 100% gratuito</p>
+        </div>
+      </div>
+      <div class="diag-body">
 
-        function showStep(step) {
-            document.querySelectorAll('.step').forEach((el, idx) => {
-                el.classList.toggle('hidden', idx !== step);
-            });
-            
-            document.getElementById('prevBtn').classList.toggle('hidden', step === 0);
-            
-            const nextBtn = document.getElementById('nextBtn');
-            if (step === totalSteps - 1) {
-                nextBtn.innerHTML = `
-                    Ver Mi Diagnóstico
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                `;
-            } else {
-                nextBtn.innerHTML = `
-                    Siguiente
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                `;
-            }
-            
-            updateStepIndicator();
-            updateProgress();
-        }
+        <div id="formPanel">
+          <div class="prog-row"><span>Progreso</span><span id="progText">0%</span></div>
+          <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+          <div class="step-dots" id="stepDots"><div class="step-dot active"></div><div class="step-dot"></div><div class="step-dot"></div><div class="step-dot"></div><div class="step-dot"></div></div>
 
-        function validateStep(step) {
-            if (step === 0) {
-                const name = document.getElementById('contactName').value.trim();
-                const email = document.getElementById('contactEmail').value.trim();
-                const company = document.getElementById('contactCompany').value.trim();
-                
-                if (!name || !email || !company) {
-                    alert('Por favor completa los campos obligatorios: Nombre, Empresa y Email');
-                    return false;
-                }
-                
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    alert('Por favor ingresa un email válido');
-                    return false;
-                }
-                
-                answers.contact = {
-                    name,
-                    email,
-                    company,
-                    phone: document.getElementById('contactPhone').value.trim(),
-                    industry: document.getElementById('contactIndustry').value
-                };
-                return true;
-            }
-            
-            // Validate radio questions
-            const stepEl = document.querySelector(`[data-step="${step}"]`);
-            const radioGroups = stepEl.querySelectorAll('input[type="radio"]');
-            const groupNames = [...new Set([...radioGroups].map(r => r.name))];
-            
-            for (const name of groupNames) {
-                const selected = stepEl.querySelector(`input[name="${name}"]:checked`);
-                if (!selected) {
-                    alert('Por favor responde todas las preguntas antes de continuar');
-                    return false;
-                }
-                answers[name] = selected.value;
-            }
-            
-            // Get checkboxes if any
-            const checkboxes = stepEl.querySelectorAll('input[type="checkbox"]:checked');
-            if (checkboxes.length > 0) {
-                answers.painPoints = [...checkboxes].map(cb => cb.value);
-            }
-            
-            // Get comments
-            const comments = document.getElementById('comments');
-            if (comments) {
-                answers.comments = comments.value;
-            }
-            
-            return true;
-        }
+          <!-- Step 0 -->
+          <div class="form-step active" data-step="0">
+            <div class="form-step-header">
+              <h4>Información de Contacto</h4>
+              <p>Para enviarte tu diagnóstico personalizado</p>
+            </div>
+            <div class="form-grid">
+              <div class="field"><label>Nombre completo *</label><input id="fName" type="text" placeholder="Tu nombre"></div>
+              <div class="field"><label>Empresa *</label><input id="fCompany" type="text" placeholder="Nombre de tu empresa"></div>
+              <div class="field"><label>Email *</label><input id="fEmail" type="email" placeholder="tu@email.com"></div>
+              <div class="field"><label>WhatsApp / Teléfono</label><input id="fPhone" type="tel" placeholder="+57 300 000 0000"></div>
+            </div>
+            <div class="field">
+              <label>Sector / Industria</label>
+              <select id="fIndustry">
+                <option value="">Selecciona tu sector</option>
+                <option value="manufactura">Manufactura</option>
+                <option value="comercio">Comercio / Retail</option>
+                <option value="alimentos">Alimentos y Bebidas</option>
+                <option value="farmaceutica">Farmacéutica</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="construccion">Construcción</option>
+                <option value="agro">Agroindustria</option>
+                <option value="servicios">Servicios</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+          </div>
 
-        function changeStep(direction) {
-            if (direction === 1 && !validateStep(currentStep)) {
-                return;
-            }
-            
-            const newStep = currentStep + direction;
-            
-            if (newStep >= totalSteps) {
-                showResults();
-                return;
-            }
-            
-            if (newStep >= 0 && newStep < totalSteps) {
-                currentStep = newStep;
-                showStep(currentStep);
-            }
-        }
+          <!-- Step 1: Tech/Digital -->
+          <div class="form-step" data-step="1">
+            <div class="form-step-header">
+              <h4>💻 Tecnología y Digitalización</h4>
+              <p>Evalúa el nivel digital de tu empresa</p>
+            </div>
+            <div class="q-label">¿Qué nivel de digitalización tiene tu empresa actualmente?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q1" value="1"><span>Procesos 100% manuales, sin sistemas digitales</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="2"><span>Usamos Excel y correo electrónico principalmente</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="3"><span>Tenemos software básico pero sistemas desconectados</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="4"><span>Plataformas integradas con datos en tiempo real</span></label>
+            </div>
+            <div class="q-label">¿Utilizas IA o automatización en algún proceso?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q2" value="1"><span>No, todo es manual</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="2"><span>Algunas macros o automatizaciones básicas</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="3"><span>Herramientas de automatización en áreas específicas</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="4"><span>IA y automatización integradas en múltiples procesos</span></label>
+            </div>
+          </div>
 
-        function calculateScores() {
-            const scores = {
-                logistica: 0,
-                inventarios: 0,
-                produccion: 0,
-                cadena: 0
-            };
-            
-            // Logística (q1, q2)
-            scores.logistica = ((parseInt(answers.q1 || 1) + parseInt(answers.q2 || 1)) / 8) * 100;
-            
-            // Inventarios (q3, q4)
-            scores.inventarios = ((parseInt(answers.q3 || 1) + parseInt(answers.q4 || 1)) / 8) * 100;
-            
-            // Producción (q5, q6)
-            scores.produccion = ((parseInt(answers.q5 || 1) + parseInt(answers.q6 || 1)) / 8) * 100;
-            
-            // Cadena (q7, q8)
-            scores.cadena = ((parseInt(answers.q7 || 1) + parseInt(answers.q8 || 1)) / 8) * 100;
-            
-            return scores;
-        }
+          <!-- Step 2: Operations -->
+          <div class="form-step" data-step="2">
+            <div class="form-step-header">
+              <h4>⚙️ Operaciones y Calidad</h4>
+              <p>Evalúa tu gestión operativa y de calidad</p>
+            </div>
+            <div class="q-label">¿Cómo gestionas el control de calidad en tu operación?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q3" value="1"><span>No existe proceso formal de calidad</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="2"><span>Revisiones informales sin documentación</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="3"><span>Procesos documentados, sin certificación</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="4"><span>Sistema de calidad certificado o en certificación</span></label>
+            </div>
+            <div class="q-label">¿Qué porcentaje de tiempos muertos/desperdicios estimas?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q4" value="1"><span>Más del 30% - Es un problema grave</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="2"><span>Entre 15% y 30% - Alto</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="3"><span>Entre 5% y 15% - Moderado</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="4"><span>Menos del 5% - Bien controlado</span></label>
+            </div>
+          </div>
 
-        function getScoreLevel(score) {
-            if (score < 40) return { level: 'Crítico', color: 'red', emoji: '🔴' };
-            if (score < 60) return { level: 'En desarrollo', color: 'amber', emoji: '🟡' };
-            if (score < 80) return { level: 'Bueno', color: 'blue', emoji: '🔵' };
-            return { level: 'Óptimo', color: 'green', emoji: '🟢' };
-        }
+          <!-- Step 3: Admin -->
+          <div class="form-step" data-step="3">
+            <div class="form-step-header">
+              <h4>🤝 Administración y RRHH</h4>
+              <p>Evalúa tu gestión administrativa</p>
+            </div>
+            <div class="q-label">¿Cómo llevas la gestión de nómina y seguridad social?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q5" value="1"><span>Manualmente, con mucho riesgo de error</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="2"><span>Excel con algunos automatismos</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="3"><span>Software básico de nómina</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="4"><span>Sistema integrado con PILA y seguridad social</span></label>
+            </div>
+            <div class="q-label">¿Cómo gestionas la cartera y los pagos a proveedores?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q6" value="1"><span>Sin control ni seguimiento formal</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="2"><span>Listas manuales o en Excel</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="3"><span>Software contable básico</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="4"><span>Sistema integrado con alertas y reportes</span></label>
+            </div>
+          </div>
 
-        function getRecommendations(area, score) {
-            const recommendations = {
-                logistica: {
-                    low: [
-                        'Implementar sistema de tracking GPS para flota',
-                        'Digitalizar la planificación de rutas con algoritmos de optimización',
-                        'Establecer KPIs de entregas on-time'
-                    ],
-                    medium: [
-                        'Integrar sistemas de notificación automática a clientes',
-                        'Implementar dashboards de monitoreo en tiempo real',
-                        'Optimizar rutas con IA predictiva'
-                    ],
-                    high: [
-                        'Mantener mejora continua con análisis de datos',
-                        'Explorar automatización avanzada con IoT',
-                        'Implementar torre de control logístico'
-                    ]
-                },
-                inventarios: {
-                    low: [
-                        'Migrar de control manual a sistema digital inmediatamente',
-                        'Implementar alertas automáticas de stock mínimo',
-                        'Establecer proceso de conteo cíclico'
-                    ],
-                    medium: [
-                        'Integrar inventario con sistema de ventas/producción',
-                        'Implementar código de barras o RFID',
-                        'Desarrollar dashboard con métricas de rotación'
-                    ],
-                    high: [
-                        'Implementar forecasting con machine learning',
-                        'Optimizar niveles de inventario con análisis ABC',
-                        'Automatizar reabastecimiento con proveedores'
-                    ]
-                },
-                produccion: {
-                    low: [
-                        'Implementar planificación semanal estructurada',
-                        'Identificar y medir tiempos muertos principales',
-                        'Establecer métricas básicas de OEE'
-                    ],
-                    medium: [
-                        'Implementar sistema MRP para planificación',
-                        'Digitalizar control de piso de producción',
-                        'Establecer programa de mantenimiento preventivo'
-                    ],
-                    high: [
-                        'Integrar BI para análisis predictivo',
-                        'Implementar lean manufacturing',
-                        'Automatizar procesos repetitivos'
-                    ]
-                },
-                cadena: {
-                    low: [
-                        'Digitalizar proceso de órdenes de compra',
-                        'Establecer evaluación básica de proveedores',
-                        'Centralizar información de proveedores'
-                    ],
-                    medium: [
-                        'Implementar portal de proveedores',
-                        'Establecer KPIs automatizados de desempeño',
-                        'Integrar sistema de compras con inventario'
-                    ],
-                    high: [
-                        'Implementar VMI con proveedores clave',
-                        'Desarrollar visibilidad end-to-end',
-                        'Explorar blockchain para trazabilidad'
-                    ]
-                }
-            };
-            
-            let level = 'low';
-            if (score >= 40 && score < 75) level = 'medium';
-            if (score >= 75) level = 'high';
-            
-            return recommendations[area][level];
-        }
+          <!-- Step 4: Priorities -->
+          <div class="form-step" data-step="4">
+            <div class="form-step-header">
+              <h4>🎯 Prioridades y Objetivos</h4>
+              <p>Cuéntanos qué es más urgente para ti</p>
+            </div>
+            <div class="q-label">¿Cuál es tu principal dolor operativo? (puedes marcar varios)</div>
+            <div class="options-list">
+              <label class="option-item"><input type="checkbox" name="q7" value="errores"><span>Errores frecuentes en procesos manuales</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="visibilidad"><span>Falta de visibilidad de datos en tiempo real</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="cumplimiento"><span>Riesgos de incumplimiento normativo</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="costos"><span>Costos operativos elevados</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="personas"><span>Problemas con la gestión del equipo</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="tecnologia"><span>Falta de tecnología actualizada</span></label>
+            </div>
+            <div class="q-label">¿Qué tan pronto necesitas ver resultados?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q8" value="urgente"><span>Urgente — Lo antes posible</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="trimestre"><span>Este trimestre</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="semestre"><span>En los próximos 6 meses</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="explorando"><span>Estoy explorando opciones</span></label>
+            </div>
+            <div class="field" style="margin-top:20px;">
+              <label>Comentarios adicionales (opcional)</label>
+              <textarea id="fComments" rows="3" placeholder="Cuéntanos más sobre tus desafíos específicos..."></textarea>
+            </div>
+          </div>
 
-        function showResults() {
-            const scores = calculateScores();
-            const avgScore = (scores.logistica + scores.inventarios + scores.produccion + scores.cadena) / 4;
-            const avgLevel = getScoreLevel(avgScore);
-            
-            document.getElementById('diagnosticContainer').classList.add('hidden');
-            
-            const resultsHTML = `
-                <div class="fade-in">
-                    <!-- Header -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8">
-                        <div class="text-center mb-8">
-                            <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 rounded-full px-4 py-2 mb-4">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                Diagnóstico Completado
-                            </div>
-                            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                                Resultados para ${answers.contact.company}
-                            </h3>
-                            <p class="text-gray-500">Hola ${answers.contact.name}, aquí está tu análisis 360°</p>
-                        </div>
-                        
-                        <!-- Overall Score -->
-                        <div class="flex flex-col items-center mb-8">
-                            <div class="relative w-40 h-40 mb-4">
-                                <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#e5e7eb" stroke-width="8"/>
-                                    <circle cx="50" cy="50" r="45" fill="none" stroke="${avgScore >= 75 ? '#10b981' : avgScore >= 50 ? '#0ea5e9' : avgScore >= 25 ? '#f59e0b' : '#ef4444'}" 
-                                        stroke-width="8" stroke-linecap="round" 
-                                        stroke-dasharray="${avgScore * 2.83} 283" 
-                                        class="progress-ring"/>
-                                </svg>
-                                <div class="absolute inset-0 flex flex-col items-center justify-center">
-                                    <span class="text-4xl font-bold text-gray-900">${Math.round(avgScore)}</span>
-                                    <span class="text-sm text-gray-500">de 100</span>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <span class="text-lg font-semibold text-gray-900">Madurez Operativa: </span>
-                                <span class="text-lg font-semibold" style="color: ${avgScore >= 75 ? '#10b981' : avgScore >= 50 ? '#0ea5e9' : avgScore >= 25 ? '#f59e0b' : '#ef4444'}">${avgLevel.level}</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Area Scores Grid -->
-                        <div class="grid md:grid-cols-2 gap-4">
-                            ${generateAreaCard('Logística', scores.logistica, 'blue', 'M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4')}
-                            ${generateAreaCard('Inventarios', scores.inventarios, 'emerald', 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4')}
-                            ${generateAreaCard('Producción', scores.produccion, 'amber', 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z')}
-                            ${generateAreaCard('Cadena de Suministro', scores.cadena, 'purple', 'M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1')}
-                        </div>
-                    </div>
-                    
-                    <!-- Recommendations -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8">
-                        <h4 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                            </svg>
-                            Plan de Acción Recomendado
-                        </h4>
-                        
-                        <div class="space-y-6">
-                            ${generateRecommendationSection('Logística', scores.logistica, 'logistica', 'blue')}
-                            ${generateRecommendationSection('Inventarios', scores.inventarios, 'inventarios', 'emerald')}
-                            ${generateRecommendationSection('Producción', scores.produccion, 'produccion', 'amber')}
-                            ${generateRecommendationSection('Cadena de Suministro', scores.cadena, 'cadena', 'purple')}
-                        </div>
-                    </div>
-                    
-                    <!-- CTA -->
-                    <div class="bg-gradient-to-r from-brand-700 to-brand-900 rounded-2xl p-8 md:p-12 text-white text-center">
-                        <h4 class="text-2xl font-bold mb-4">¿Quieres profundizar en este diagnóstico?</h4>
-                        <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
-                            Agenda una consulta gratuita con nuestro equipo para revisar tu diagnóstico en detalle 
-                            y diseñar un plan de acción personalizado para tu empresa.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://wa.me/573000000000?text=Hola, acabo de completar el diagnóstico 360° para ${encodeURIComponent(answers.contact.company)} y me gustaría agendar una consulta." 
-                               target="_blank" 
-                               class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                                </svg>
-                                Agendar Consulta por WhatsApp
-                            </a>
-                            <button onclick="downloadResults()" class="border-2 border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition">
-                                Descargar PDF
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- Restart -->
-                    <div class="text-center mt-8">
-                        <button onclick="restartDiagnostic()" class="text-gray-500 hover:text-gray-700 font-medium transition">
-                            ← Realizar nuevo diagnóstico
-                        </button>
-                    </div>
-                </div>
-            `;
-            
-            document.getElementById('resultsContainer').innerHTML = resultsHTML;
-            document.getElementById('resultsContainer').classList.remove('hidden');
-            
-            // Scroll to results
-            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth' });
-            
-            // Log lead data (in production, send to backend)
-            console.log('Lead Data:', {
-                contact: answers.contact,
-                scores: scores,
-                avgScore: avgScore,
-                painPoints: answers.painPoints,
-                urgency: answers.q10,
-                comments: answers.comments,
-                timestamp: new Date().toISOString()
-            });
-        }
+          <div class="diag-nav">
+            <button class="btn-back" id="btnBack" onclick="diagStep(-1)" style="display:none">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              Anterior
+            </button>
+            <button class="btn-next" id="btnNext" onclick="diagStep(1)">
+              Siguiente
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
 
-        function generateAreaCard(name, score, color, iconPath) {
-            const level = getScoreLevel(score);
-            return `
-                <div class="bg-gray-50 rounded-xl p-4 flex items-center gap-4">
-                    <div class="w-12 h-12 bg-${color}-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <svg class="w-6 h-6 text-${color}-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${iconPath}"/>
-                        </svg>
-                    </div>
-                    <div class="flex-1">
-                        <div class="flex justify-between items-center mb-1">
-                            <span class="font-medium text-gray-900">${name}</span>
-                            <span class="text-sm font-semibold" style="color: ${score >= 75 ? '#10b981' : score >= 50 ? '#0ea5e9' : score >= 25 ? '#f59e0b' : '#ef4444'}">${Math.round(score)}%</span>
-                        </div>
-                        <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                            <div class="h-full rounded-full" style="width: ${score}%; background-color: ${score >= 75 ? '#10b981' : score >= 50 ? '#0ea5e9' : score >= 25 ? '#f59e0b' : '#ef4444'}"></div>
-                        </div>
-                        <span class="text-xs text-gray-500">${level.level}</span>
-                    </div>
-                </div>
-            `;
-        }
+        <!-- RESULTS -->
+        <div id="resultsPanel">
+          <div class="res-score-ring">
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="10"></circle>
+              <circle id="scoreCircle" cx="80" cy="80" r="68" fill="none" stroke="url(#scoreGrad)" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 427" style="transform:rotate(-90deg);transform-origin:80px 80px;transition:stroke-dasharray 1.2s ease;"></circle>
+              <defs>
+                <lineargradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f97316"></stop>
+                  <stop offset="100%" stop-color="#38bdf8"></stop>
+                </lineargradient>
+              </defs>
+            </svg>
+            <div class="score-label" id="scoreNum">0</div>
+            <div class="score-sub" id="scoreLvl">Calculando...</div>
+          </div>
 
-        function generateRecommendationSection(name, score, area, color) {
-            const recs = getRecommendations(area, score);
-            const level = getScoreLevel(score);
-            
-            return `
-                <div class="border-l-4 border-${color}-500 pl-4">
-                    <div class="flex items-center justify-between mb-2">
-                        <h5 class="font-semibold text-gray-900">${name}</h5>
-                        <span class="text-sm px-2 py-1 rounded-full" style="background-color: ${score >= 75 ? '#d1fae5' : score >= 50 ? '#dbeafe' : score >= 25 ? '#fef3c7' : '#fee2e2'}; color: ${score >= 75 ? '#065f46' : score >= 50 ? '#1e40af' : score >= 25 ? '#92400e' : '#991b1b'}">${level.emoji} ${level.level}</span>
-                    </div>
-                    <ul class="space-y-2">
-                        ${recs.map(rec => `
-                            <li class="flex items-start gap-2 text-gray-600">
-                                <svg class="w-5 h-5 text-${color}-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                                ${rec}
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-            `;
-        }
+          <div style="text-align:center;margin-bottom:36px;">
+            <h3 style="font-family:&#39;Syne&#39;,sans-serif;font-size:22px;font-weight:700;margin-bottom:6px;">
+              Diagnóstico para <span id="rCompany">tu empresa</span>
+            </h3>
+            <p style="color:var(--muted);font-size:14px;">Hola <span id="rName"></span>, aquí está tu análisis 360°</p>
+          </div>
 
-        function downloadResults() {
-            alert('Función de descarga PDF próximamente. Por ahora, puedes tomar una captura de pantalla o agendar una consulta para recibir el informe completo.');
-        }
+          <div class="area-scores" id="areaScores"></div>
 
-        function restartDiagnostic() {
-            currentStep = 0;
-            Object.keys(answers).forEach(key => delete answers[key]);
-            document.querySelectorAll('input').forEach(input => {
-                if (input.type === 'radio' || input.type === 'checkbox') {
-                    input.checked = false;
-                } else {
-                    input.value = '';
-                }
-            });
-            document.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
-            document.querySelectorAll('textarea').forEach(textarea => textarea.value = '');
-            
-            document.getElementById('resultsContainer').classList.add('hidden');
-            document.getElementById('diagnosticContainer').classList.remove('hidden');
-            showStep(0);
-            scrollToSection('diagnostico');
-        }
-    </script>
-</body>
-</html>
+          <div class="recs-title">Plan de Acción Recomendado</div>
+          <div id="recsContainer"></div>
+
+          <div class="res-cta">
+            <h4>¿Quieres profundizar en este diagnóstico?</h4>
+            <p>Agenda una consulta gratuita con nuestro equipo y diseñemos juntos tu hoja de ruta.</p>
+            <div class="res-btns">
+              <a id="waLink" href="file:///C:/Users/Usuario/Downloads/mg360.html#" target="_blank" class="btn-primary">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                Agendar por WhatsApp
+              </a>
+              <button onclick="restartDiag()" class="btn-outline">← Nuevo diagnóstico</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contacto">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Contáctanos</div>
+        <h2>¿Listo para transformar tu operación?</h2>
+        <p>Agenda una consulta gratuita con nuestro equipo y descubre cómo Motion Group 360 puede llevar tu empresa al siguiente nivel.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);">📱</div>
+            <div class="contact-method-text">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/573246091847" target="_blank">+57 324 609 1847</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);">✉️</div>
+            <div class="contact-method-text">
+              <strong>Email</strong>
+              <a href="mailto:Motion360group@gmail.com">Motion360group@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);">📍</div>
+            <div class="contact-method-text">
+              <strong>Ubicación</strong>
+              <span>Medellín, Colombia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;">
+          <h3 style="font-family:&#39;Syne&#39;,sans-serif;font-size:20px;font-weight:700;margin-bottom:24px;">Escríbenos ahora</h3>
+          <div class="field"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
+          <div class="field"><label>Mensaje</label><textarea rows="4" placeholder="Cuéntanos sobre tu empresa y lo que necesitas..."></textarea></div>
+          <a href="https://wa.me/573246091847" target="_blank" class="btn-primary" style="width:100%;justify-content:center;display:flex;margin-top:8px;">
+            Enviar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;">
+    <div class="logo-badge">MG3</div>
+    <span style="font-family:&#39;Syne&#39;,sans-serif;font-weight:700;color:var(--text);">Motion Group 360</span>
+  </div>
+  <p><strong>Eficiencia desde todos los ángulos</strong> · © 2025 Motion Group 360. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// ─── MODULE TABS ───
+function switchModule(idx) {
+  document.querySelectorAll('.mod-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.module-panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+}
+
+// ─── DIAGNOSTIC ───
+let diagCurrent = 0;
+const TOTAL_STEPS = 5;
+const diagAnswers = {};
+
+function initDots() {
+  const c = document.getElementById('stepDots');
+  c.innerHTML = '';
+  for(let i=0;i<TOTAL_STEPS;i++){
+    const d = document.createElement('div');
+    d.className = 'step-dot' + (i===0?' active':i<0?' done':'');
+    c.appendChild(d);
+  }
+}
+initDots();
+
+function updateDiagUI() {
+  const pct = (diagCurrent/(TOTAL_STEPS-1))*100;
+  document.getElementById('progFill').style.width = pct+'%';
+  document.getElementById('progText').textContent = Math.round(pct)+'%';
+  document.querySelectorAll('.step-dot').forEach((d,i)=>{
+    d.className = 'step-dot' + (i===diagCurrent?' active':i<diagCurrent?' done':'');
+  });
+  document.getElementById('btnBack').style.display = diagCurrent===0?'none':'flex';
+  const nb = document.getElementById('btnNext');
+  if(diagCurrent===TOTAL_STEPS-1){
+    nb.innerHTML='Ver mi Diagnóstico <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>';
+  } else {
+    nb.innerHTML='Siguiente <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+  }
+}
+
+function diagStep(dir) {
+  if(dir===1 && !validateDiagStep()) return;
+  if(dir===1 && diagCurrent===TOTAL_STEPS-1){ showDiagResults(); return; }
+  diagCurrent = Math.max(0, Math.min(TOTAL_STEPS-1, diagCurrent+dir));
+  document.querySelectorAll('.form-step').forEach((s,i)=>s.classList.toggle('active',i===diagCurrent));
+  updateDiagUI();
+}
+
+function validateDiagStep() {
+  const step = document.querySelector(`.form-step[data-step="${diagCurrent}"]`);
+  if(diagCurrent===0){
+    const n=document.getElementById('fName').value.trim();
+    const e=document.getElementById('fEmail').value.trim();
+    const co=document.getElementById('fCompany').value.trim();
+    if(!n||!e||!co){ alert('Por favor completa Nombre, Empresa y Email'); return false; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){ alert('Email inválido'); return false; }
+    diagAnswers.contact = {name:n,email:e,company:co,phone:document.getElementById('fPhone').value,industry:document.getElementById('fIndustry').value};
+    return true;
+  }
+  // validate radio groups
+  const radios = [...step.querySelectorAll('input[type=radio]')];
+  const groups = [...new Set(radios.map(r=>r.name))];
+  for(const g of groups){
+    if(!step.querySelector(`input[name="${g}"]:checked`)){
+      alert('Por favor responde todas las preguntas');
+      return false;
+    }
+    diagAnswers[g] = step.querySelector(`input[name="${g}"]:checked`).value;
+  }
+  const checks = [...step.querySelectorAll('input[type=checkbox]:checked')];
+  if(checks.length>0) diagAnswers.painPoints = checks.map(c=>c.value);
+  return true;
+}
+
+function calcScores() {
+  return {
+    tech: ((+diagAnswers.q1||1)+(+diagAnswers.q2||1))/8*100,
+    ops:  ((+diagAnswers.q3||1)+(+diagAnswers.q4||1))/8*100,
+    admin:((+diagAnswers.q5||1)+(+diagAnswers.q6||1))/8*100,
+  };
+}
+
+const LEVELS = [
+  {max:40, label:'Crítico', color:'#ef4444'},
+  {max:60, label:'En Desarrollo', color:'#f59e0b'},
+  {max:80, label:'Bueno', color:'#38bdf8'},
+  {max:101, label:'Óptimo', color:'#10b981'},
+];
+function getLevel(s){ return LEVELS.find(l=>s<l.max); }
+
+const RECS = {
+  tech:{
+    low:['Migrar procesos manuales a herramientas digitales básicas','Implementar sistema de gestión centralizado','Digitalizar flujos de aprobación y comunicación interna'],
+    med:['Integrar plataformas y conectar datos entre áreas','Implementar automatización en procesos repetitivos','Desarrollar dashboards de monitoreo en tiempo real'],
+    high:['Explorar IA para análisis predictivo y toma de decisiones','Implementar arquitectura cloud y escalabilidad','Desarrollar capacidades de data analytics avanzado'],
+  },
+  ops:{
+    low:['Documentar y estandarizar procesos clave inmediatamente','Identificar y medir tiempos muertos y desperdicios','Implementar control de calidad básico y trazabilidad'],
+    med:['Implementar metodología Lean/Six Sigma','Certificar o estructurar el sistema de calidad','Automatizar control de producción e inventarios'],
+    high:['Implementar mejora continua con PDCA y KPIs avanzados','Explorar IoT para monitoreo de producción','Desarrollar análisis predictivo de fallas y capacidad'],
+  },
+  admin:{
+    low:['Digitalizar nómina y seguridad social de forma urgente','Implementar control de cartera y pagos estructurado','Documentar políticas básicas de RRHH'],
+    med:['Integrar sistema contable con nómina y PILA','Automatizar reportes de cartera y flujo de caja','Desarrollar proceso formal de gestión del talento'],
+    high:['Implementar BI financiero y dashboards ejecutivos','Desarrollar estrategia de cultura organizacional','Automatizar ciclo completo de gestión de personal'],
+  },
+};
+
+function getRecs(area, score) {
+  const k = score<40?'low':score<75?'med':'high';
+  return RECS[area][k];
+}
+
+function showDiagResults() {
+  const scores = calcScores();
+  const avg = (scores.tech+scores.ops+scores.admin)/3;
+  const lvl = getLevel(avg);
+
+  document.getElementById('formPanel').style.display='none';
+  document.getElementById('resultsPanel').style.display='block';
+
+  document.getElementById('rCompany').textContent = diagAnswers.contact.company;
+  document.getElementById('rName').textContent = diagAnswers.contact.name;
+
+  // Animate score
+  let cur=0;
+  const target=Math.round(avg);
+  const iv=setInterval(()=>{
+    cur=Math.min(cur+2, target);
+    document.getElementById('scoreNum').textContent=cur;
+    const dash=(cur/100)*427;
+    document.getElementById('scoreCircle').setAttribute('stroke-dasharray',`${dash} 427`);
+    if(cur>=target) clearInterval(iv);
+  },20);
+  document.getElementById('scoreLvl').textContent='Madurez: '+lvl.label;
+
+  // Area scores
+  const areas = [
+    {name:'Tecnología & Digital', score:scores.tech},
+    {name:'Operaciones & Calidad', score:scores.ops},
+    {name:'Administración & RRHH', score:scores.admin},
+  ];
+  document.getElementById('areaScores').innerHTML = areas.map(a=>`
+    <div class="area-score-item">
+      <div class="area-name">${a.name}</div>
+      <div class="area-bar"><div class="area-bar-fill" style="width:${a.score}%"></div></div>
+      <div class="area-pct">${Math.round(a.score)}% · ${getLevel(a.score).label}</div>
+    </div>
+  `).join('');
+
+  // Recs
+  const recAreas = [
+    {key:'tech',name:'💻 Tecnología & Digital', score:scores.tech},
+    {key:'ops',name:'⚙️ Operaciones & Calidad', score:scores.ops},
+    {key:'admin',name:'🤝 Administración & RRHH', score:scores.admin},
+  ];
+  document.getElementById('recsContainer').innerHTML = recAreas.map(a=>`
+    <div class="rec-block">
+      <div class="rec-area">${a.name} — ${getLevel(a.score).label}</div>
+      <ul class="rec-list">${getRecs(a.key,a.score).map(r=>`<li>${r}</li>`).join('')}</ul>
+    </div>
+  `).join('');
+
+  // WA link
+  const msg = `Hola, acabo de completar el diagnóstico 360° para ${diagAnswers.contact.company}. Mi puntaje fue ${Math.round(avg)}/100. Me gustaría agendar una consulta.`;
+  document.getElementById('waLink').href = `https://wa.me/573246091847?text=${encodeURIComponent(msg)}`;
+}
+
+function restartDiag(){
+  diagCurrent=0;
+  Object.keys(diagAnswers).forEach(k=>delete diagAnswers[k]);
+  document.querySelectorAll('.form-step input').forEach(i=>{if(i.type==='radio'||i.type==='checkbox')i.checked=false;else i.value='';});
+  document.querySelectorAll('.form-step select').forEach(s=>s.selectedIndex=0);
+  document.querySelectorAll('.form-step textarea').forEach(t=>t.value='');
+  document.querySelectorAll('.form-step').forEach((s,i)=>s.classList.toggle('active',i===0));
+  document.getElementById('formPanel').style.display='block';
+  document.getElementById('resultsPanel').style.display='none';
+  updateDiagUI();
+}
+</script>
+
+
+</body></html>
