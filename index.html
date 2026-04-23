@@ -1,105 +1,578 @@
-From: <Saved by Blink>
-Snapshot-Content-Location: file:///C:/Users/Usuario/Downloads/mg360_2.html
-Subject: =?utf-8?Q?Motion=20Group=20360=20|=20Eficiencia=20desde=20todos=20los=20?=
- =?utf-8?Q?=C3=A1ngulos?=
-Date: Wed, 22 Apr 2026 19:28:05 -0500
-MIME-Version: 1.0
-Content-Type: multipart/related;
-	type="text/html";
-	boundary="----MultipartBoundary--b5pcSeMH7H2iazzzRuczn01tzJBvKMQoGFy6DPuUqP----"
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/Usuario/Downloads/mg360_4.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motion Group 360 | Eficiencia desde todos los ángulos</title>
+<link href="./Motion Group 360 _ Eficiencia desde todos los ángulos_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg: #060810;
+    --bg2: #0a0d18;
+    --surface: #0f1220;
+    --surface2: #151828;
+    --border: rgba(255,255,255,0.07);
+    --orange: #f97316;
+    --orange2: #fb923c;
+    --orange-glow: rgba(249,115,22,0.18);
+    --blue: #38bdf8;
+    --blue2: #0ea5e9;
+    --blue-glow: rgba(56,189,248,0.15);
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --dim: #475569;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+  }
 
-------MultipartBoundary--b5pcSeMH7H2iazzzRuczn01tzJBvKMQoGFy6DPuUqP----
-Content-Type: text/html
-Content-ID: <frame-8DBCEF72DE1F7536A5F8A154743591E6@mhtml.blink>
-Content-Transfer-Encoding: quoted-printable
-Content-Location: file:///C:/Users/Usuario/Downloads/mg360_2.html
+  /* ─── NOISE TEXTURE ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
 
-<!DOCTYPE html><html lang=3D"es"><head><meta http-equiv=3D"Content-Type" co=
-ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
-css" href=3D"cid:css-173cb310-a549-45d5-a5a4-a44fc9b8e97b@mhtml.blink" />
+  /* ─── HEADER ─── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(6,8,16,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo-wrap { display: flex; align-items: center; gap: 14px; }
+  .logo-badge {
+    width: 46px; height: 46px;
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; color: white;
+    box-shadow: 0 0 20px var(--orange-glow);
+    position: relative;
+  }
+  .logo-badge::after {
+    content: '';
+    position: absolute;
+    inset: -1px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--blue), var(--orange));
+    z-index: -1;
+    opacity: 0.6;
+  }
+  .logo-text { line-height: 1.2; }
+  .logo-text strong {
+    display: block; font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: 17px; letter-spacing: 0.02em;
+    background: linear-gradient(90deg, #fff 60%, var(--orange));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .logo-text span { font-size: 11px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
 
-<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
-0">
-<title>Motion Group 360 | Eficiencia desde todos los =C3=A1ngulos</title>
-<link href=3D"https://fonts.googleapis.com/css2?family=3DBebas+Neue&amp;fam=
-ily=3DSyne:wght@400;600;700;800&amp;family=3DDM+Sans:wght@300;400;500&amp;d=
-isplay=3Dswap" rel=3D"stylesheet">
+  nav { display: flex; gap: 32px; align-items: center; }
+  nav a {
+    color: var(--muted); font-size: 14px; text-decoration: none; font-weight: 500;
+    transition: color 0.2s; letter-spacing: 0.02em;
+  }
+  nav a:hover { color: var(--text); }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--orange), #ea580c);
+    color: white !important; padding: 9px 20px; border-radius: 8px;
+    font-weight: 600 !important; font-size: 13px !important;
+    box-shadow: 0 0 16px var(--orange-glow);
+    transition: box-shadow 0.2s, transform 0.2s !important;
+  }
+  .nav-cta:hover { box-shadow: 0 0 28px rgba(249,115,22,0.4); transform: translateY(-1px); }
 
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    padding: 100px 40px;
+  }
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+  .orb1 { width: 600px; height: 600px; background: radial-gradient(circle, rgba(249,115,22,0.22) 0%, transparent 70%); top: -100px; right: -100px; }
+  .orb2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(56,189,248,0.18) 0%, transparent 70%); bottom: -100px; left: -100px; }
+  .orb3 { width: 300px; height: 300px; background: radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+  /* Animated ring */
+  .hero-ring {
+    position: absolute;
+    width: 700px; height: 700px;
+    border: 1px solid rgba(249,115,22,0.1);
+    border-radius: 50%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: spin 30s linear infinite;
+  }
+  .hero-ring::before {
+    content: '';
+    position: absolute;
+    width: 12px; height: 12px;
+    background: var(--orange);
+    border-radius: 50%;
+    top: -6px; left: 50%;
+    box-shadow: 0 0 16px var(--orange);
+  }
+  .hero-ring2 {
+    position: absolute;
+    width: 500px; height: 500px;
+    border: 1px solid rgba(56,189,248,0.08);
+    border-radius: 50%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: spin 20s linear infinite reverse;
+  }
+  @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+  .hero-content { position: relative; z-index: 2; text-align: center; max-width: 860px; }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 8px 16px; border-radius: 100px; margin-bottom: 32px;
+    font-size: 12px; color: var(--orange); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-tag .dot { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.5;transform:scale(0.8);} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 9vw, 110px);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  h1 .line-orange {
+    background: linear-gradient(90deg, var(--orange), var(--orange2), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    display: block;
+  }
+  .hero-sub {
+    font-size: 18px; color: var(--muted); max-width: 560px; margin: 0 auto 40px;
+    line-height: 1.7; font-weight: 300;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-btns {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    color: white; padding: 14px 32px; border-radius: 10px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600;
+    box-shadow: 0 0 28px var(--orange-glow); transition: all 0.25s;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 40px rgba(249,115,22,0.4); }
+  .btn-outline {
+    background: transparent; color: var(--text); padding: 14px 32px; border-radius: 10px;
+    border: 1px solid var(--border); cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 500; transition: all 0.25s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px; backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.04);
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.07); }
+
+  /* STATS */
+  .stats-bar {
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    padding: 28px 40px;
+  }
+  .stats-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif; font-size: 40px; letter-spacing: 0.04em;
+    background: linear-gradient(135deg, var(--orange), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stat-label { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px; }
+
+  /* ─── SECTION COMMON ─── */
+  section { padding: 100px 40px; position: relative; z-index: 1; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11px; color: var(--orange); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .section-tag::before { content: ''; width: 20px; height: 1px; background: var(--orange); }
+  h2 {
+    font-family: 'Syne', sans-serif; font-size: clamp(32px, 4vw, 52px); font-weight: 800;
+    line-height: 1.1; margin-bottom: 16px; letter-spacing: -0.01em;
+  }
+  .section-desc { color: var(--muted); font-size: 17px; line-height: 1.7; max-width: 600px; font-weight: 300; }
+
+  /* ─── MODULE TABS ─── */
+  .modules-nav {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 56px; margin-top: 48px;
+  }
+  .mod-tab {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 20px; border-radius: 100px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--muted); font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+  }
+  .mod-tab .tab-icon { font-size: 16px; }
+  .mod-tab:hover { border-color: rgba(249,115,22,0.3); color: var(--text); }
+  .mod-tab.active {
+    background: linear-gradient(135deg, rgba(249,115,22,0.2), rgba(249,115,22,0.05));
+    border-color: var(--orange); color: var(--text);
+    box-shadow: 0 0 20px rgba(249,115,22,0.1);
+  }
+
+  /* ─── MODULE PANEL ─── */
+  .module-panel { display: none; }
+  .module-panel.active { display: block; animation: fadeUp 0.4s ease; }
+
+  .mod-header {
+    display: flex; align-items: flex-start; gap: 24px; margin-bottom: 48px;
+    padding: 32px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 20px;
+    position: relative; overflow: hidden;
+  }
+  .mod-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--orange-glow), transparent 60%);
+    pointer-events: none;
+  }
+  .mod-icon {
+    width: 72px; height: 72px; border-radius: 18px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  .mod-header-text h3 {
+    font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; margin-bottom: 8px;
+  }
+  .mod-header-text p { color: var(--muted); font-size: 16px; line-height: 1.7; font-weight: 300; }
+
+  /* Services grid */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;
+  }
+  .service-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px;
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--orange), var(--blue));
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .service-card:hover { border-color: rgba(249,115,22,0.25); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+  .service-card:hover::after { opacity: 1; }
+  .card-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 18px;
+    background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.2);
+  }
+  .card-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+  .card-desc { color: var(--muted); font-size: 14px; line-height: 1.65; font-weight: 300; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+  .tag {
+    font-size: 11px; padding: 4px 10px; border-radius: 100px;
+    background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.15);
+    color: var(--blue); font-weight: 500;
+  }
+  .tag-orange {
+    background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.15); color: var(--orange);
+  }
+
+  /* ─── DIAGNOSTIC ─── */
+  #diagnostico { background: var(--surface); }
+  .diag-wrap {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 24px;
+    overflow: hidden; box-shadow: 0 0 80px rgba(0,0,0,0.5);
+  }
+  .diag-top {
+    background: linear-gradient(135deg, rgba(249,115,22,0.15) 0%, rgba(56,189,248,0.08) 100%);
+    padding: 40px 48px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .diag-badge {
+    font-family: 'Bebas Neue', sans-serif; font-size: 48px; line-height: 1;
+    background: linear-gradient(135deg, var(--orange), var(--blue));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .diag-top-text h3 { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; }
+  .diag-top-text p { color: var(--muted); font-size: 15px; margin-top: 4px; }
+
+  .diag-body { padding: 48px; }
+
+  /* Progress */
+  .prog-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+  .prog-track { height: 4px; background: rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; margin-bottom: 36px; }
+  .prog-fill {
+    height: 100%; border-radius: 4px;
+    background: linear-gradient(90deg, var(--orange), var(--blue));
+    transition: width 0.5s ease;
+  }
+
+  /* Step dots */
+  .step-dots { display: flex; gap: 6px; justify-content: center; margin-bottom: 40px; }
+  .step-dot {
+    height: 6px; width: 6px; border-radius: 6px;
+    background: rgba(255,255,255,0.15); transition: all 0.3s;
+  }
+  .step-dot.active { width: 24px; background: var(--orange); }
+  .step-dot.done { background: rgba(249,115,22,0.4); }
+
+  /* Form */
+  .form-step { display: none; }
+  .form-step.active { display: block; animation: fadeUp 0.4s ease; }
+
+  .form-step-header h4 { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+  .form-step-header p { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 8px; font-weight: 500; letter-spacing: 0.03em; }
+  .field input, .field select, .field textarea {
+    width: 100%; background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px; color: var(--text);
+    font-family: 'DM Sans', sans-serif; font-size: 14px; transition: border-color 0.2s;
+    outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,115,22,0.08);
+  }
+  .field input::placeholder, .field textarea::placeholder { color: var(--dim); }
+  .field select option { background: var(--surface); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* Radio/checkbox options */
+  .options-list { display: flex; flex-direction: column; gap: 8px; }
+  .option-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
+    cursor: pointer; transition: all 0.2s; background: rgba(255,255,255,0.02);
+  }
+  .option-item:hover { border-color: rgba(249,115,22,0.3); background: rgba(249,115,22,0.04); }
+  .option-item input { accent-color: var(--orange); width: 16px; height: 16px; cursor: pointer; }
+  .option-item span { font-size: 14px; color: var(--muted); }
+  .option-item:has(input:checked) {
+    border-color: var(--orange); background: rgba(249,115,22,0.06);
+  }
+  .option-item:has(input:checked) span { color: var(--text); }
+  .q-label { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 12px; margin-top: 24px; }
+
+  /* Nav buttons */
+  .diag-nav { display: flex; justify-content: space-between; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .btn-back {
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    padding: 11px 24px; border-radius: 8px; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 14px; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+  }
+  .btn-back:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+  .btn-next {
+    background: linear-gradient(135deg, var(--orange), #c2410c);
+    color: white; padding: 12px 28px; border-radius: 8px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600;
+    box-shadow: 0 0 20px var(--orange-glow); transition: all 0.2s;
+    display: flex; align-items: center; gap: 8px; margin-left: auto;
+  }
+  .btn-next:hover { box-shadow: 0 0 32px rgba(249,115,22,0.4); transform: translateY(-1px); }
+
+  /* Results */
+  #resultsPanel { display: none; animation: fadeUp 0.5s ease; }
+  .res-score-ring { display: flex; flex-direction: column; align-items: center; margin-bottom: 48px; }
+  .res-score-ring svg { filter: drop-shadow(0 0 16px rgba(249,115,22,0.4)); }
+  .score-label { font-family: 'Bebas Neue', sans-serif; font-size: 56px; margin-top: -8px; }
+  .score-sub { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .area-scores { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; margin-bottom: 40px; }
+  .area-score-item {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px;
+  }
+  .area-name { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  .area-bar { height: 4px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+  .area-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--orange), var(--blue)); transition: width 1s ease; }
+  .area-pct { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .recs-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 24px; }
+  .rec-block { margin-bottom: 28px; }
+  .rec-area { font-size: 13px; font-weight: 600; color: var(--orange); margin-bottom: 10px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .rec-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .rec-list li {
+    display: flex; gap: 10px; font-size: 14px; color: var(--muted); align-items: flex-start;
+  }
+  .rec-list li::before { content: '→'; color: var(--orange); flex-shrink: 0; font-weight: 700; }
+  .res-cta {
+    background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(56,189,248,0.08));
+    border: 1px solid rgba(249,115,22,0.25); border-radius: 16px; padding: 32px;
+    text-align: center; margin-top: 36px;
+  }
+  .res-cta h4 { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .res-cta p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .res-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ─── CONTACT ─── */
+  #contacto { background: var(--bg); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+  .contact-info h2 { margin-bottom: 12px; }
+  .contact-info p { color: var(--muted); line-height: 1.7; margin-bottom: 36px; font-size: 16px; }
+  .contact-methods { display: flex; flex-direction: column; gap: 16px; }
+  .contact-method {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  }
+  .contact-method-icon {
+    width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .contact-method-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+  .contact-method-text span { font-size: 13px; color: var(--muted); }
+  .contact-method a { color: var(--orange); text-decoration: none; font-size: 13px; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 40px; text-align: center;
+  }
+  footer p { color: var(--dim); font-size: 13px; }
+  footer strong { color: var(--muted); }
+
+  /* ─── SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: rgba(249,115,22,0.3); border-radius: 3px; }
+
+  /* ─── HAMBURGER ─── */
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px; cursor: pointer;
+    padding: 8px; background: none; border: none;
+  }
+  .hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--text); border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none; flex-direction: column;
+    position: fixed; top: 72px; left: 0; right: 0;
+    background: rgba(6,8,16,0.98); backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px 28px; z-index: 99;
+    gap: 4px;
+  }
+  .mobile-menu.open { display: flex; animation: fadeUp 0.25s ease; }
+  .mobile-menu a {
+    color: var(--muted); text-decoration: none; font-size: 16px; font-weight: 500;
+    padding: 14px 16px; border-radius: 10px; transition: all 0.2s;
+    border: 1px solid transparent;
+  }
+  .mobile-menu a:hover, .mobile-menu a:active { color: var(--text); background: var(--surface); }
+  .mobile-menu .nav-cta {
+    margin-top: 8px; background: linear-gradient(135deg, var(--orange), #ea580c);
+    color: white !important; text-align: center; font-size: 15px !important;
+    padding: 14px !important; border-radius: 10px !important;
+    box-shadow: 0 0 20px var(--orange-glow); display: block;
+  }
+
+  @media (max-width: 768px) {
+    header { padding: 0 20px; }
+    nav { display: none; }
+    .hamburger { display: flex; }
+    section { padding: 64px 20px; }
+    h1 { font-size: 48px; }
+    .stats-inner { grid-template-columns: repeat(2,1fr); }
+    .services-grid { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .area-scores { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .diag-body { padding: 28px 24px; }
+    .diag-top { padding: 24px; }
+    .hero { padding: 80px 20px; }
+    .modules-nav { gap: 6px; }
+    .mod-tab { font-size: 12px; padding: 8px 14px; }
+    .mod-header { flex-direction: column; gap: 16px; }
+    .hero-ring, .hero-ring2 { display: none; }
+  }
+</style>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class=3D"logo-wrap">
-    <div class=3D"logo-badge">MG3</div>
-    <div class=3D"logo-text">
+  <div class="logo-wrap">
+    <div class="logo-badge">MG3</div>
+    <div class="logo-text">
       <strong>Motion Group 360</strong>
-      <span>Eficiencia desde todos los =C3=A1ngulos</span>
+      <span>Eficiencia desde todos los ángulos</span>
     </div>
   </div>
   <nav>
-    <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#servicios">S=
-ervicios</a>
-    <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#diagnostico"=
->Diagn=C3=B3stico</a>
-    <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#contacto">Co=
-ntacto</a>
-    <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#diagnostico"=
- class=3D"nav-cta">Diagn=C3=B3stico Gratis</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#servicios">Servicios</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#diagnostico">Diagnóstico</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#contacto">Contacto</a>
+    <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#diagnostico" class="nav-cta">Diagnóstico Gratis</a>
   </nav>
-  <button class=3D"hamburger" id=3D"hamburger" aria-label=3D"Men=C3=BA">
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
     <span></span><span></span><span></span>
   </button>
 </header>
 
 <!-- MOBILE MENU -->
-<div class=3D"mobile-menu" id=3D"mobileMenu">
-  <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#servicios">Ser=
-vicios</a>
-  <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#diagnostico">D=
-iagn=C3=B3stico</a>
-  <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#contacto">Cont=
-acto</a>
-  <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#diagnostico" c=
-lass=3D"nav-cta">Diagn=C3=B3stico Gratis</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#servicios" onclick="closeMenu()">Servicios</a>
+  <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#diagnostico" onclick="closeMenu()">Diagnóstico</a>
+  <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#contacto" onclick="closeMenu()">Contacto</a>
+  <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#diagnostico" class="nav-cta" onclick="closeMenu()">Diagnóstico Gratis</a>
 </div>
 
 <!-- HERO -->
-<section class=3D"hero" id=3D"inicio">
-  <div class=3D"hero-orb orb1"></div>
-  <div class=3D"hero-orb orb2"></div>
-  <div class=3D"hero-orb orb3"></div>
-  <div class=3D"hero-ring"></div>
-  <div class=3D"hero-ring2"></div>
-  <div class=3D"hero-content">
-    <div class=3D"hero-tag">
-      <span class=3D"dot"></span>
-      Diagn=C3=B3stico gratuito disponible
+<section class="hero" id="inicio">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-ring2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Diagnóstico gratuito disponible
     </div>
     <h1>
       EFICIENCIA<br>
-      <span class=3D"line-orange">DESDE TODOS</span>
-      LOS =C3=81NGULOS
+      <span class="line-orange">DESDE TODOS</span>
+      LOS ÁNGULOS
     </h1>
-    <p class=3D"hero-sub">Transformamos tu empresa con soluciones integrale=
-s en tecnolog=C3=ADa, operaciones, calidad y administraci=C3=B3n.</p>
-    <div class=3D"hero-btns">
-      <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#diagnostic=
-o" class=3D"btn-primary">
-        <svg width=3D"18" height=3D"18" fill=3D"none" stroke=3D"currentColo=
-r" viewBox=3D"0 0 24 24"><path stroke-linecap=3D"round" stroke-linejoin=3D"=
-round" stroke-width=3D"2" d=3D"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0=
- 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2=
-a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-=
-2z"></path></svg>
-        Diagn=C3=B3stico 360=C2=B0
+    <p class="hero-sub">Transformamos tu empresa con soluciones integrales en tecnología, operaciones, calidad y administración.</p>
+    <div class="hero-btns">
+      <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#diagnostico" class="btn-primary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        Diagnóstico 360°
       </a>
-      <a href=3D"file:///C:/Users/Usuario/Downloads/mg360_2.html#servicios"=
- class=3D"btn-outline">
-        <svg width=3D"18" height=3D"18" fill=3D"none" stroke=3D"currentColo=
-r" viewBox=3D"0 0 24 24"><path stroke-linecap=3D"round" stroke-linejoin=3D"=
-round" stroke-width=3D"2" d=3D"M19 9l-7 7-7-7"></path></svg>
+      <a href="file:///C:/Users/Usuario/Downloads/mg360_4.html#servicios" class="btn-outline">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         Ver servicios
       </a>
     </div>
@@ -107,528 +580,370 @@ round" stroke-width=3D"2" d=3D"M19 9l-7 7-7-7"></path></svg>
 </section>
 
 <!-- STATS -->
-<div class=3D"stats-bar">
-  <div class=3D"stats-inner">
-    <div><div class=3D"stat-num">360=C2=B0</div><div class=3D"stat-label">V=
-isi=C3=B3n Integral</div></div>
-    <div><div class=3D"stat-num">6</div><div class=3D"stat-label">M=C3=B3du=
-los de Servicio</div></div>
-    <div><div class=3D"stat-num">100%</div><div class=3D"stat-label">Person=
-alizado</div></div>
-    <div><div class=3D"stat-num">24/7</div><div class=3D"stat-label">Soport=
-e Continuo</div></div>
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div><div class="stat-num">360°</div><div class="stat-label">Visión Integral</div></div>
+    <div><div class="stat-num">6</div><div class="stat-label">Módulos de Servicio</div></div>
+    <div><div class="stat-num">100%</div><div class="stat-label">Personalizado</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-label">Soporte Continuo</div></div>
   </div>
 </div>
 
 <!-- SERVICES -->
-<section id=3D"servicios">
-  <div class=3D"section-inner">
-    <div class=3D"section-tag">Nuestros M=C3=B3dulos</div>
+<section id="servicios">
+  <div class="section-inner">
+    <div class="section-tag">Nuestros Módulos</div>
     <h2>Soluciones integrales<br>para tu empresa</h2>
-    <p class=3D"section-desc">Seis m=C3=B3dulos especializados que cubren c=
-ada dimensi=C3=B3n de tu empresa, desde tecnolog=C3=ADa e ingenier=C3=ADa i=
-ndustrial hasta contadur=C3=ADa y gesti=C3=B3n humana.</p>
+    <p class="section-desc">Seis módulos especializados que cubren cada dimensión de tu empresa, desde tecnología e ingeniería industrial hasta contaduría y gestión humana.</p>
 
     <!-- MODULE TABS -->
-    <div class=3D"modules-nav">
-      <div class=3D"mod-tab active"><span class=3D"tab-icon">=F0=9F=92=BB</=
-span> Tecnolog=C3=ADa &amp; Digital</div>
-      <div class=3D"mod-tab"><span class=3D"tab-icon">=E2=9A=99=EF=B8=8F</s=
-pan> Operaciones &amp; Calidad</div>
-      <div class=3D"mod-tab"><span class=3D"tab-icon">=F0=9F=A4=9D</span> A=
-dministraci=C3=B3n &amp; RRHH</div>
-      <div class=3D"mod-tab"><span class=3D"tab-icon">=F0=9F=A4=96</span> A=
-utomatizaci=C3=B3n &amp; IA</div>
-      <div class=3D"mod-tab"><span class=3D"tab-icon">=F0=9F=93=8A</span> C=
-ontadur=C3=ADa P=C3=BAblica</div>
-      <div class=3D"mod-tab"><span class=3D"tab-icon">=F0=9F=8F=AD</span> I=
-ngenier=C3=ADa Industrial</div>
+    <div class="modules-nav">
+      <div class="mod-tab active" onclick="switchModule(0)"><span class="tab-icon">💻</span> Tecnología &amp; Digital</div>
+      <div class="mod-tab" onclick="switchModule(1)"><span class="tab-icon">⚙️</span> Operaciones &amp; Calidad</div>
+      <div class="mod-tab" onclick="switchModule(2)"><span class="tab-icon">🤝</span> Administración &amp; RRHH</div>
+      <div class="mod-tab" onclick="switchModule(3)"><span class="tab-icon">🤖</span> Automatización &amp; IA</div>
+      <div class="mod-tab" onclick="switchModule(4)"><span class="tab-icon">📊</span> Contaduría Pública</div>
+      <div class="mod-tab" onclick="switchModule(5)"><span class="tab-icon">🏭</span> Ingeniería Industrial</div>
     </div>
 
     <!-- MODULE 0: TECH -->
-    <div class=3D"module-panel active" id=3D"mod0">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(56,189,248,0.1);bo=
-rder:1px solid rgba(56,189,248,0.2);">=F0=9F=92=BB</div>
-        <div class=3D"mod-header-text">
-          <h3>Tecnolog=C3=ADa &amp; Transformaci=C3=B3n Digital</h3>
-          <p>Desarrollamos soluciones tecnol=C3=B3gicas a medida: aplicacio=
-nes web, m=C3=B3viles y de escritorio, junto con estrategias de transformac=
-i=C3=B3n digital que modernizan tu operaci=C3=B3n y potencian el crecimient=
-o.</p>
+    <div class="module-panel active" id="mod0">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);">💻</div>
+        <div class="mod-header-text">
+          <h3>Tecnología &amp; Transformación Digital</h3>
+          <p>Desarrollamos soluciones tecnológicas a medida: aplicaciones web, móviles y de escritorio, junto con estrategias de transformación digital que modernizan tu operación y potencian el crecimiento.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=8C=90</div>
-          <div class=3D"card-title">Desarrollo Web</div>
-          <div class=3D"card-desc">Aplicaciones web personalizadas con tecn=
-olog=C3=ADas de vanguardia para rendimiento y escalabilidad =C3=B3ptimos.</=
-div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">React</span><span class=3D"tag">Next.js</sp=
-an><span class=3D"tag">Node.js</span><span class=3D"tag">TypeScript</span><=
-span class=3D"tag">MongoDB</span>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">🌐</div>
+          <div class="card-title">Desarrollo Web</div>
+          <div class="card-desc">Aplicaciones web personalizadas con tecnologías de vanguardia para rendimiento y escalabilidad óptimos.</div>
+          <div class="card-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=B1</div>
-          <div class=3D"card-title">Desarrollo M=C3=B3vil</div>
-          <div class=3D"card-desc">Apps nativas y multiplataforma con exper=
-iencias de usuario excepcionales para iOS y Android.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">React Native</span><span class=3D"tag">Flut=
-ter</span><span class=3D"tag">Swift</span><span class=3D"tag">Kotlin</span>
+        <div class="service-card">
+          <div class="card-icon">📱</div>
+          <div class="card-title">Desarrollo Móvil</div>
+          <div class="card-desc">Apps nativas y multiplataforma con experiencias de usuario excepcionales para iOS y Android.</div>
+          <div class="card-tags">
+            <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Swift</span><span class="tag">Kotlin</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=96=A5=EF=B8=8F</div>
-          <div class=3D"card-title">Desarrollo de Software</div>
-          <div class=3D"card-desc">Soluciones empresariales de nivel profes=
-ional dise=C3=B1adas para optimizar las operaciones de tu negocio.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">Python</span><span class=3D"tag">Java</span=
-><span class=3D"tag">.NET</span><span class=3D"tag">AWS</span><span class=
-=3D"tag">Docker</span>
+        <div class="service-card">
+          <div class="card-icon">🖥️</div>
+          <div class="card-title">Desarrollo de Software</div>
+          <div class="card-desc">Soluciones empresariales de nivel profesional diseñadas para optimizar las operaciones de tu negocio.</div>
+          <div class="card-tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">.NET</span><span class="tag">AWS</span><span class="tag">Docker</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=94=84</div>
-          <div class=3D"card-title">Transformaci=C3=B3n Digital</div>
-          <div class=3D"card-desc">Estrategias digitales integrales para mo=
-dernizar operaciones, mejorar experiencias y escalar el negocio.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">AWS</span><span class=3D"tag">Azure</span><=
-span class=3D"tag">Power BI</span><span class=3D"tag">Kubernetes</span>
+        <div class="service-card">
+          <div class="card-icon">🔄</div>
+          <div class="card-title">Transformación Digital</div>
+          <div class="card-desc">Estrategias digitales integrales para modernizar operaciones, mejorar experiencias y escalar el negocio.</div>
+          <div class="card-tags">
+            <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Power BI</span><span class="tag">Kubernetes</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=91=A5</div>
-          <div class=3D"card-title">Aumento de Personal</div>
-          <div class=3D"card-desc">Equipos tecnol=C3=B3gicos dedicados y ta=
-lento bajo demanda para reforzar tus proyectos digitales.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">Data Analysts</span><span class=3D"tag">Dev=
-Ops</span><span class=3D"tag">QA Specialists</span><span class=3D"tag">PM</=
-span>
+        <div class="service-card">
+          <div class="card-icon">👥</div>
+          <div class="card-title">Aumento de Personal</div>
+          <div class="card-desc">Equipos tecnológicos dedicados y talento bajo demanda para reforzar tus proyectos digitales.</div>
+          <div class="card-tags">
+            <span class="tag">Data Analysts</span><span class="tag">DevOps</span><span class="tag">QA Specialists</span><span class="tag">PM</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=8A</div>
-          <div class=3D"card-title">Implementaci=C3=B3n de Sistemas</div>
-          <div class=3D"card-desc">Sistemas de informaci=C3=B3n a medida pa=
-ra gestionar y optimizar todos los procesos de tu negocio.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">ERP</span><span class=3D"tag tag=
--orange">CRM</span><span class=3D"tag tag-orange">BI</span><span class=3D"t=
-ag tag-orange">Dashboards</span>
+        <div class="service-card">
+          <div class="card-icon">📊</div>
+          <div class="card-title">Implementación de Sistemas</div>
+          <div class="card-desc">Sistemas de información a medida para gestionar y optimizar todos los procesos de tu negocio.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">ERP</span><span class="tag tag-orange">CRM</span><span class="tag tag-orange">BI</span><span class="tag tag-orange">Dashboards</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- MODULE 1: OPERATIONS -->
-    <div class=3D"module-panel" id=3D"mod1">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(249,115,22,0.1);bo=
-rder:1px solid rgba(249,115,22,0.2);">=E2=9A=99=EF=B8=8F</div>
-        <div class=3D"mod-header-text">
+    <div class="module-panel" id="mod1">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);">⚙️</div>
+        <div class="mod-header-text">
           <h3>Operaciones, Calidad &amp; Procesos</h3>
-          <p>Optimizamos tu operaci=C3=B3n de punta a punta: desde la inocu=
-idad y el cumplimiento normativo hasta la eficiencia productiva, log=C3=ADs=
-tica e inventarios, con enfoque Lean y Six Sigma.</p>
+          <p>Optimizamos tu operación de punta a punta: desde la inocuidad y el cumplimiento normativo hasta la eficiencia productiva, logística e inventarios, con enfoque Lean y Six Sigma.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A7=AA</div>
-          <div class=3D"card-title">Calidad e Inocuidad</div>
-          <div class=3D"card-desc">BPM, Plan de Saneamiento, programas prer=
-requisito INVIMA, auditor=C3=ADas sanitarias y diagn=C3=B3sticos de cumplim=
-iento normativo.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">BPM</span><span class=3D"tag tag=
--orange">INVIMA</span><span class=3D"tag tag-orange">Auditor=C3=ADas</span>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">🧪</div>
+          <div class="card-title">Calidad e Inocuidad</div>
+          <div class="card-desc">BPM, Plan de Saneamiento, programas prerrequisito INVIMA, auditorías sanitarias y diagnósticos de cumplimiento normativo.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">BPM</span><span class="tag tag-orange">INVIMA</span><span class="tag tag-orange">Auditorías</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=88</div>
-          <div class=3D"card-title">Mejora de Procesos</div>
-          <div class=3D"card-desc">Optimizaci=C3=B3n con metodolog=C3=ADa L=
-ean/Six Sigma, reducci=C3=B3n de desperdicios y dise=C3=B1o e implementaci=
-=C3=B3n de indicadores KPI.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">Lean</span><span class=3D"tag">Six Sigma</s=
-pan><span class=3D"tag">KPIs</span>
+        <div class="service-card">
+          <div class="card-icon">📈</div>
+          <div class="card-title">Mejora de Procesos</div>
+          <div class="card-desc">Optimización con metodología Lean/Six Sigma, reducción de desperdicios y diseño e implementación de indicadores KPI.</div>
+          <div class="card-tags">
+            <span class="tag">Lean</span><span class="tag">Six Sigma</span><span class="tag">KPIs</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=8F=AD</div>
-          <div class=3D"card-title">Producci=C3=B3n y Operaciones</div>
-          <div class=3D"card-desc">Planeaci=C3=B3n y control de producci=C3=
-=B3n, balanceo de l=C3=ADneas, an=C3=A1lisis y optimizaci=C3=B3n de costos =
-operativos.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">MRP</span><span class=3D"tag tag=
--orange">OEE</span><span class=3D"tag tag-orange">Balanceo</span>
+        <div class="service-card">
+          <div class="card-icon">🏭</div>
+          <div class="card-title">Producción y Operaciones</div>
+          <div class="card-desc">Planeación y control de producción, balanceo de líneas, análisis y optimización de costos operativos.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">MRP</span><span class="tag tag-orange">OEE</span><span class="tag tag-orange">Balanceo</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=9A=9A</div>
-          <div class=3D"card-title">Log=C3=ADstica e Inventarios</div>
-          <div class=3D"card-desc">Control y optimizaci=C3=B3n de inventari=
-os, mejora de almacenamiento, distribuci=C3=B3n eficiente y trazabilidad.</=
-div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">WMS</span><span class=3D"tag">Trazabilidad<=
-/span><span class=3D"tag">Control Stock</span>
+        <div class="service-card">
+          <div class="card-icon">🚚</div>
+          <div class="card-title">Logística e Inventarios</div>
+          <div class="card-desc">Control y optimización de inventarios, mejora de almacenamiento, distribución eficiente y trazabilidad.</div>
+          <div class="card-tags">
+            <span class="tag">WMS</span><span class="tag">Trazabilidad</span><span class="tag">Control Stock</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=8B</div>
-          <div class=3D"card-title">Documentaci=C3=B3n y Cumplimiento</div>
-          <div class=3D"card-desc">Dise=C3=B1o de manuales, procesos y form=
-atos. Aseguramiento del cumplimiento normativo y estructuraci=C3=B3n organi=
-zacional.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">ISO</span><span class=3D"tag tag=
--orange">Manuales</span><span class=3D"tag tag-orange">Normativas</span>
+        <div class="service-card">
+          <div class="card-icon">📋</div>
+          <div class="card-title">Documentación y Cumplimiento</div>
+          <div class="card-desc">Diseño de manuales, procesos y formatos. Aseguramiento del cumplimiento normativo y estructuración organizacional.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">ISO</span><span class="tag tag-orange">Manuales</span><span class="tag tag-orange">Normativas</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=8E=93</div>
-          <div class=3D"card-title">Capacitaci=C3=B3n</div>
-          <div class=3D"card-desc">Formaci=C3=B3n en BPM, calidad e inocuid=
-ad. Programas de capacitaci=C3=B3n continua y desarrollo del talento operat=
-ivo.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">BPM</span><span class=3D"tag">Calidad</span=
-><span class=3D"tag">Inocuidad</span>
+        <div class="service-card">
+          <div class="card-icon">🎓</div>
+          <div class="card-title">Capacitación</div>
+          <div class="card-desc">Formación en BPM, calidad e inocuidad. Programas de capacitación continua y desarrollo del talento operativo.</div>
+          <div class="card-tags">
+            <span class="tag">BPM</span><span class="tag">Calidad</span><span class="tag">Inocuidad</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- MODULE 2: ADMIN/HR -->
-    <div class=3D"module-panel" id=3D"mod2">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(16,185,129,0.1);bo=
-rder:1px solid rgba(16,185,129,0.2);">=F0=9F=A4=9D</div>
-        <div class=3D"mod-header-text">
-          <h3>Administraci=C3=B3n &amp; Recursos Humanos</h3>
-          <p>Acompa=C3=B1amos a empresas y emprendedores en la gesti=C3=B3n=
- administrativa, contable y de talento humano. Un servicio confiable, organ=
-izado y adaptado, para que te enfoques en crecer.</p>
+    <div class="module-panel" id="mod2">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);">🤝</div>
+        <div class="mod-header-text">
+          <h3>Administración &amp; Recursos Humanos</h3>
+          <p>Acompañamos a empresas y emprendedores en la gestión administrativa, contable y de talento humano. Un servicio confiable, organizado y adaptado, para que te enfoques en crecer.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=91=A4</div>
-          <div class=3D"card-title">Seguridad Social &amp; N=C3=B3mina</div=
->
-          <div class=3D"card-desc">Afiliaciones, inconsistencias, liquidaci=
-=C3=B3n y pago de planilla PILA. N=C3=B3mina, contrataci=C3=B3n, liquidaci=
-=C3=B3n y prestaciones sociales.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">PILA</span><span class=3D"tag ta=
-g-orange">N=C3=B3mina</span><span class=3D"tag tag-orange">Prestaciones</sp=
-an>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">👤</div>
+          <div class="card-title">Seguridad Social &amp; Nómina</div>
+          <div class="card-desc">Afiliaciones, inconsistencias, liquidación y pago de planilla PILA. Nómina, contratación, liquidación y prestaciones sociales.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">PILA</span><span class="tag tag-orange">Nómina</span><span class="tag tag-orange">Prestaciones</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A9=BA</div>
-          <div class=3D"card-title">Dotaci=C3=B3n &amp; Incapacidades</div>
-          <div class=3D"card-desc">Gesti=C3=B3n de dotaci=C3=B3n, radicaci=
-=C3=B3n y cobro de incapacidades ante EPS y ARL. Seguimiento completo del p=
-roceso.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">EPS</span><span class=3D"tag">ARL</span><sp=
-an class=3D"tag">Incapacidades</span>
+        <div class="service-card">
+          <div class="card-icon">🩺</div>
+          <div class="card-title">Dotación &amp; Incapacidades</div>
+          <div class="card-desc">Gestión de dotación, radicación y cobro de incapacidades ante EPS y ARL. Seguimiento completo del proceso.</div>
+          <div class="card-tags">
+            <span class="tag">EPS</span><span class="tag">ARL</span><span class="tag">Incapacidades</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=92=A1</div>
-          <div class=3D"card-title">Asesor=C3=ADa Talento Humano</div>
-          <div class=3D"card-desc">Asesor=C3=ADa general para el =C3=A1rea =
-de Talento Humano: pol=C3=ADticas, procesos disciplinarios, clima organizac=
-ional.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">RRHH</span><span class=3D"tag ta=
-g-orange">Pol=C3=ADticas</span><span class=3D"tag tag-orange">Clima Org.</s=
-pan>
+        <div class="service-card">
+          <div class="card-icon">💡</div>
+          <div class="card-title">Asesoría Talento Humano</div>
+          <div class="card-desc">Asesoría general para el área de Talento Humano: políticas, procesos disciplinarios, clima organizacional.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">RRHH</span><span class="tag tag-orange">Políticas</span><span class="tag tag-orange">Clima Org.</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A7=BE</div>
-          <div class=3D"card-title">Facturaci=C3=B3n y Recibos</div>
-          <div class=3D"card-desc">Gesti=C3=B3n de facturaci=C3=B3n electr=
-=C3=B3nica, recibos de caja y documentos soporte de egreso (DSE) con precis=
-i=C3=B3n.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">DIAN</span><span class=3D"tag">DSE</span><s=
-pan class=3D"tag">Factura Elect.</span>
+        <div class="service-card">
+          <div class="card-icon">🧾</div>
+          <div class="card-title">Facturación y Recibos</div>
+          <div class="card-desc">Gestión de facturación electrónica, recibos de caja y documentos soporte de egreso (DSE) con precisión.</div>
+          <div class="card-tags">
+            <span class="tag">DIAN</span><span class="tag">DSE</span><span class="tag">Factura Elect.</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=92=B0</div>
-          <div class=3D"card-title">Pagos y Caja Menor</div>
-          <div class=3D"card-desc">Manejo de pagos a proveedores, administr=
-aci=C3=B3n de caja menor y conciliaciones para una operaci=C3=B3n transpare=
-nte.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">Proveedores</span><span class=3D=
-"tag tag-orange">Caja Menor</span><span class=3D"tag tag-orange">Conciliaci=
-=C3=B3n</span>
+        <div class="service-card">
+          <div class="card-icon">💰</div>
+          <div class="card-title">Pagos y Caja Menor</div>
+          <div class="card-desc">Manejo de pagos a proveedores, administración de caja menor y conciliaciones para una operación transparente.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">Proveedores</span><span class="tag tag-orange">Caja Menor</span><span class="tag tag-orange">Conciliación</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=A5</div>
-          <div class=3D"card-title">Gesti=C3=B3n de Cartera</div>
-          <div class=3D"card-desc">Seguimiento y cobro de cartera, reportes=
- de antig=C3=BCedad de saldos y estrategias de recuperaci=C3=B3n de cuentas=
-.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">Cobro</span><span class=3D"tag">Cartera</sp=
-an><span class=3D"tag">Reportes</span>
+        <div class="service-card">
+          <div class="card-icon">📥</div>
+          <div class="card-title">Gestión de Cartera</div>
+          <div class="card-desc">Seguimiento y cobro de cartera, reportes de antigüedad de saldos y estrategias de recuperación de cuentas.</div>
+          <div class="card-tags">
+            <span class="tag">Cobro</span><span class="tag">Cartera</span><span class="tag">Reportes</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- MODULE 3: AUTOMATION/AI -->
-    <div class=3D"module-panel" id=3D"mod3">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(168,85,247,0.1);bo=
-rder:1px solid rgba(168,85,247,0.2);">=F0=9F=A4=96</div>
-        <div class=3D"mod-header-text">
-          <h3>Automatizaci=C3=B3n, IA &amp; Marketing Digital</h3>
-          <p>Integramos inteligencia artificial y automatizaci=C3=B3n a tu =
-negocio para eliminar tareas repetitivas, potenciar la toma de decisiones y=
- amplificar tu presencia digital.</p>
+    <div class="module-panel" id="mod3">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);">🤖</div>
+        <div class="mod-header-text">
+          <h3>Automatización, IA &amp; Marketing Digital</h3>
+          <p>Integramos inteligencia artificial y automatización a tu negocio para eliminar tareas repetitivas, potenciar la toma de decisiones y amplificar tu presencia digital.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=E2=9A=A1</div>
-          <div class=3D"card-title">Automatizaci=C3=B3n de Procesos</div>
-          <div class=3D"card-desc">Identificamos y automatizamos flujos rep=
-etitivos con RPA y herramientas low-code para liberar tiempo y reducir erro=
-res.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">RPA</span><span class=3D"tag tag=
--orange">Zapier</span><span class=3D"tag tag-orange">Make</span><span class=
-=3D"tag tag-orange">n8n</span>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Automatización de Procesos</div>
+          <div class="card-desc">Identificamos y automatizamos flujos repetitivos con RPA y herramientas low-code para liberar tiempo y reducir errores.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">RPA</span><span class="tag tag-orange">Zapier</span><span class="tag tag-orange">Make</span><span class="tag tag-orange">n8n</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A7=A0</div>
-          <div class=3D"card-title">IA Integrada al Negocio</div>
-          <div class=3D"card-desc">Implementaci=C3=B3n de modelos de IA par=
-a an=C3=A1lisis predictivo, asistentes inteligentes, chatbots y toma de dec=
-isiones basada en datos.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">ChatGPT API</span><span class=3D"tag">ML</s=
-pan><span class=3D"tag">LLMs</span>
+        <div class="service-card">
+          <div class="card-icon">🧠</div>
+          <div class="card-title">IA Integrada al Negocio</div>
+          <div class="card-desc">Implementación de modelos de IA para análisis predictivo, asistentes inteligentes, chatbots y toma de decisiones basada en datos.</div>
+          <div class="card-tags">
+            <span class="tag">ChatGPT API</span><span class="tag">ML</span><span class="tag">LLMs</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=A3</div>
-          <div class=3D"card-title">Marketing Digital</div>
-          <div class=3D"card-desc">Estrategias de marketing digital, pauta =
-en redes sociales, SEO, email marketing y generaci=C3=B3n de leads cualific=
-ados.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">Meta Ads</span><span class=3D"ta=
-g tag-orange">SEO</span><span class=3D"tag tag-orange">Email Mktg</span>
+        <div class="service-card">
+          <div class="card-icon">📣</div>
+          <div class="card-title">Marketing Digital</div>
+          <div class="card-desc">Estrategias de marketing digital, pauta en redes sociales, SEO, email marketing y generación de leads cualificados.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">Meta Ads</span><span class="tag tag-orange">SEO</span><span class="tag tag-orange">Email Mktg</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=94=81</div>
-          <div class=3D"card-title">Mejora Continua</div>
-          <div class=3D"card-desc">Monitoreo de KPIs en tiempo real, cultur=
-a de mejora continua, ciclos PDCA y tableros de control inteligentes.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">PDCA</span><span class=3D"tag">Power BI</sp=
-an><span class=3D"tag">Dashboards</span>
+        <div class="service-card">
+          <div class="card-icon">🔁</div>
+          <div class="card-title">Mejora Continua</div>
+          <div class="card-desc">Monitoreo de KPIs en tiempo real, cultura de mejora continua, ciclos PDCA y tableros de control inteligentes.</div>
+          <div class="card-tags">
+            <span class="tag">PDCA</span><span class="tag">Power BI</span><span class="tag">Dashboards</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=94=97</div>
-          <div class=3D"card-title">Integraci=C3=B3n de Sistemas</div>
-          <div class=3D"card-desc">Conectamos tus plataformas y herramienta=
-s para que la informaci=C3=B3n fluya sin fricciones entre =C3=A1reas y sist=
-emas.</div>
-          <div class=3D"card-tags">
-            <span class=3D"tag tag-orange">APIs</span><span class=3D"tag ta=
-g-orange">Webhooks</span><span class=3D"tag tag-orange">ETL</span>
+        <div class="service-card">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Integración de Sistemas</div>
+          <div class="card-desc">Conectamos tus plataformas y herramientas para que la información fluya sin fricciones entre áreas y sistemas.</div>
+          <div class="card-tags">
+            <span class="tag tag-orange">APIs</span><span class="tag tag-orange">Webhooks</span><span class="tag tag-orange">ETL</span>
           </div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=A1</div>
-          <div class=3D"card-title">Anal=C3=ADtica &amp; Business Intellige=
-nce</div>
-          <div class=3D"card-desc">Transformamos datos en decisiones. Dise=
-=C3=B1amos dashboards, modelos de datos y reportes ejecutivos accionables.<=
-/div>
-          <div class=3D"card-tags">
-            <span class=3D"tag">Power BI</span><span class=3D"tag">Looker</=
-span><span class=3D"tag">SQL</span>
+        <div class="service-card">
+          <div class="card-icon">📡</div>
+          <div class="card-title">Analítica &amp; Business Intelligence</div>
+          <div class="card-desc">Transformamos datos en decisiones. Diseñamos dashboards, modelos de datos y reportes ejecutivos accionables.</div>
+          <div class="card-tags">
+            <span class="tag">Power BI</span><span class="tag">Looker</span><span class="tag">SQL</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MODULE 4: CONTADUR=C3=8DA -->
-    <div class=3D"module-panel" id=3D"mod4">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(234,179,8,0.1);bor=
-der:1px solid rgba(234,179,8,0.2);">=F0=9F=93=8A</div>
-        <div class=3D"mod-header-text">
-          <h3>Contadur=C3=ADa P=C3=BAblica</h3>
-          <p>Servicios contables y tributarios para empresas y personas nat=
-urales. Registro, asesor=C3=ADa, cumplimiento fiscal y acompa=C3=B1amiento =
-empresarial de la mano de contadores p=C3=BAblicos certificados.</p>
+    <!-- MODULE 4: CONTADURÍA -->
+    <div class="module-panel" id="mod4">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(234,179,8,0.1);border:1px solid rgba(234,179,8,0.2);">📊</div>
+        <div class="mod-header-text">
+          <h3>Contaduría Pública</h3>
+          <p>Servicios contables y tributarios para empresas y personas naturales. Registro, asesoría, cumplimiento fiscal y acompañamiento empresarial de la mano de contadores públicos certificados.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=9D</div>
-          <div class=3D"card-title">Registros Contables</div>
-          <div class=3D"card-desc">Registro sistem=C3=A1tico y ordenado de =
-todas las operaciones financieras, garantizando informaci=C3=B3n confiable =
-y actualizada en todo momento.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Libro Dia=
-rio</span><span class=3D"tag tag-orange">Libro Mayor</span><span class=3D"t=
-ag tag-orange">Estados Financieros</span></div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">📝</div>
+          <div class="card-title">Registros Contables</div>
+          <div class="card-desc">Registro sistemático y ordenado de todas las operaciones financieras, garantizando información confiable y actualizada en todo momento.</div>
+          <div class="card-tags"><span class="tag tag-orange">Libro Diario</span><span class="tag tag-orange">Libro Mayor</span><span class="tag tag-orange">Estados Financieros</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A7=AE</div>
-          <div class=3D"card-title">Asesor=C3=ADa Contable y Tributaria</di=
-v>
-          <div class=3D"card-desc">Orientaci=C3=B3n experta para optimizar =
-la carga fiscal y cumplir con todas las obligaciones legales y tributarias =
-vigentes ante la DIAN.</div>
-          <div class=3D"card-tags"><span class=3D"tag">DIAN</span><span cla=
-ss=3D"tag">IVA</span><span class=3D"tag">Retenci=C3=B3n en la Fuente</span>=
-</div>
+        <div class="service-card">
+          <div class="card-icon">🧮</div>
+          <div class="card-title">Asesoría Contable y Tributaria</div>
+          <div class="card-desc">Orientación experta para optimizar la carga fiscal y cumplir con todas las obligaciones legales y tributarias vigentes ante la DIAN.</div>
+          <div class="card-tags"><span class="tag">DIAN</span><span class="tag">IVA</span><span class="tag">Retención en la Fuente</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=8F=A2</div>
-          <div class=3D"card-title">Contabilidad para Empresas</div>
-          <div class=3D"card-desc">Gesti=C3=B3n contable integral para empr=
-esas de todos los tama=C3=B1os, desde pymes y startups hasta compa=C3=B1=C3=
-=ADas con operaciones m=C3=A1s complejas.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Pymes</sp=
-an><span class=3D"tag tag-orange">S.A.S.</span><span class=3D"tag tag-orang=
-e">Persona Jur=C3=ADdica</span></div>
+        <div class="service-card">
+          <div class="card-icon">🏢</div>
+          <div class="card-title">Contabilidad para Empresas</div>
+          <div class="card-desc">Gestión contable integral para empresas de todos los tamaños, desde pymes y startups hasta compañías con operaciones más complejas.</div>
+          <div class="card-tags"><span class="tag tag-orange">Pymes</span><span class="tag tag-orange">S.A.S.</span><span class="tag tag-orange">Persona Jurídica</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=91=A4</div>
-          <div class=3D"card-title">Contabilidad Persona Natural</div>
-          <div class=3D"card-desc">Manejo contable y tributario para profes=
-ionales independientes, freelancers y personas naturales obligadas a llevar=
- contabilidad.</div>
-          <div class=3D"card-tags"><span class=3D"tag">Independientes</span=
-><span class=3D"tag">R=C3=A9gimen Simple</span><span class=3D"tag">RUT</spa=
-n></div>
+        <div class="service-card">
+          <div class="card-icon">👤</div>
+          <div class="card-title">Contabilidad Persona Natural</div>
+          <div class="card-desc">Manejo contable y tributario para profesionales independientes, freelancers y personas naturales obligadas a llevar contabilidad.</div>
+          <div class="card-tags"><span class="tag">Independientes</span><span class="tag">Régimen Simple</span><span class="tag">RUT</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=8B</div>
-          <div class=3D"card-title">Declaraciones de Impuestos</div>
-          <div class=3D"card-desc">Preparaci=C3=B3n y presentaci=C3=B3n opo=
-rtuna de declaraciones de renta, IVA, retenci=C3=B3n en la fuente e impuest=
-os territoriales ante la DIAN.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Renta</sp=
-an><span class=3D"tag tag-orange">IVA Bimestral</span><span class=3D"tag ta=
-g-orange">ICA</span></div>
+        <div class="service-card">
+          <div class="card-icon">📋</div>
+          <div class="card-title">Declaraciones de Impuestos</div>
+          <div class="card-desc">Preparación y presentación oportuna de declaraciones de renta, IVA, retención en la fuente e impuestos territoriales ante la DIAN.</div>
+          <div class="card-tags"><span class="tag tag-orange">Renta</span><span class="tag tag-orange">IVA Bimestral</span><span class="tag tag-orange">ICA</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=A4=9D</div>
-          <div class=3D"card-title">Acompa=C3=B1amiento Empresarial</div>
-          <div class=3D"card-desc">Asesor=C3=ADa integral para la toma de d=
-ecisiones financieras, planeaci=C3=B3n tributaria y estructuraci=C3=B3n con=
-table adaptada al crecimiento del negocio.</div>
-          <div class=3D"card-tags"><span class=3D"tag">Planeaci=C3=B3n Fisc=
-al</span><span class=3D"tag">Diagn=C3=B3stico</span><span class=3D"tag">Con=
-sultor=C3=ADa</span></div>
+        <div class="service-card">
+          <div class="card-icon">🤝</div>
+          <div class="card-title">Acompañamiento Empresarial</div>
+          <div class="card-desc">Asesoría integral para la toma de decisiones financieras, planeación tributaria y estructuración contable adaptada al crecimiento del negocio.</div>
+          <div class="card-tags"><span class="tag">Planeación Fiscal</span><span class="tag">Diagnóstico</span><span class="tag">Consultoría</span></div>
         </div>
       </div>
     </div>
 
-    <!-- MODULE 5: INGENIER=C3=8DA INDUSTRIAL -->
-    <div class=3D"module-panel" id=3D"mod5">
-      <div class=3D"mod-header">
-        <div class=3D"mod-icon" style=3D"background:rgba(239,68,68,0.1);bor=
-der:1px solid rgba(239,68,68,0.2);">=F0=9F=8F=AD</div>
-        <div class=3D"mod-header-text">
-          <h3>Ingenier=C3=ADa Industrial &amp; Mantenimiento</h3>
-          <p>Soluciones integrales de ingenier=C3=ADa para la industria ali=
-mentaria. Desde el dise=C3=B1o y fabricaci=C3=B3n de maquinaria especializa=
-da hasta el mantenimiento preventivo y correctivo que garantiza que tu prod=
-ucci=C3=B3n nunca se detenga.</p>
+    <!-- MODULE 5: INGENIERÍA INDUSTRIAL -->
+    <div class="module-panel" id="mod5">
+      <div class="mod-header">
+        <div class="mod-icon" style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);">🏭</div>
+        <div class="mod-header-text">
+          <h3>Ingeniería Industrial &amp; Mantenimiento</h3>
+          <p>Soluciones integrales de ingeniería para la industria alimentaria. Desde el diseño y fabricación de maquinaria especializada hasta el mantenimiento preventivo y correctivo que garantiza que tu producción nunca se detenga.</p>
         </div>
       </div>
-      <div class=3D"services-grid">
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=E2=9A=99=EF=B8=8F</div>
-          <div class=3D"card-title">Dise=C3=B1o y Fabricaci=C3=B3n de Maqui=
-naria</div>
-          <div class=3D"card-desc">Dise=C3=B1o y desarrollo de proyectos in=
-dustriales a medida. Fabricaci=C3=B3n de equipos especiales para la industr=
-ia alimentaria bajo estrictos est=C3=A1ndares de higiene.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Ingenier=
-=C3=ADa a la Medida</span><span class=3D"tag tag-orange">BPM</span><span cl=
-ass=3D"tag tag-orange">INVIMA</span></div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon">⚙️</div>
+          <div class="card-title">Diseño y Fabricación de Maquinaria</div>
+          <div class="card-desc">Diseño y desarrollo de proyectos industriales a medida. Fabricación de equipos especiales para la industria alimentaria bajo estrictos estándares de higiene.</div>
+          <div class="card-tags"><span class="tag tag-orange">Ingeniería a la Medida</span><span class="tag tag-orange">BPM</span><span class="tag tag-orange">INVIMA</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=94=A7</div>
-          <div class=3D"card-title">Mantenimiento Preventivo</div>
-          <div class=3D"card-desc">Planes programados de mantenimiento para=
- evitar fallas inesperadas, minimizar tiempos muertos y maximizar la vida =
-=C3=BAtil de los equipos productivos.</div>
-          <div class=3D"card-tags"><span class=3D"tag">TPM</span><span clas=
-s=3D"tag">OEE</span><span class=3D"tag">Planes Preventivos</span></div>
+        <div class="service-card">
+          <div class="card-icon">🔧</div>
+          <div class="card-title">Mantenimiento Preventivo</div>
+          <div class="card-desc">Planes programados de mantenimiento para evitar fallas inesperadas, minimizar tiempos muertos y maximizar la vida útil de los equipos productivos.</div>
+          <div class="card-tags"><span class="tag">TPM</span><span class="tag">OEE</span><span class="tag">Planes Preventivos</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=9A=A8</div>
-          <div class=3D"card-title">Mantenimiento Correctivo</div>
-          <div class=3D"card-desc">Respuesta r=C3=A1pida ante emergencias y=
- fallas imprevistas. Diagn=C3=B3stico preciso y reparaci=C3=B3n eficiente p=
-ara restablecer la continuidad operativa.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Respuesta=
- R=C3=A1pida</span><span class=3D"tag tag-orange">Diagn=C3=B3stico</span><s=
-pan class=3D"tag tag-orange">Emergencias</span></div>
+        <div class="service-card">
+          <div class="card-icon">🚨</div>
+          <div class="card-title">Mantenimiento Correctivo</div>
+          <div class="card-desc">Respuesta rápida ante emergencias y fallas imprevistas. Diagnóstico preciso y reparación eficiente para restablecer la continuidad operativa.</div>
+          <div class="card-tags"><span class="tag tag-orange">Respuesta Rápida</span><span class="tag tag-orange">Diagnóstico</span><span class="tag tag-orange">Emergencias</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=94=A9</div>
-          <div class=3D"card-title">Suministro de Repuestos e Insumos</div>
-          <div class=3D"card-desc">Suministro de repuestos originales y com=
-ponentes industriales. Gesti=C3=B3n de insumos t=C3=A9cnicos con un solo pu=
-nto de contacto para toda tu maquinaria.</div>
-          <div class=3D"card-tags"><span class=3D"tag">Repuestos OEM</span>=
-<span class=3D"tag">Componentes</span><span class=3D"tag">Insumos T=C3=A9cn=
-icos</span></div>
+        <div class="service-card">
+          <div class="card-icon">🔩</div>
+          <div class="card-title">Suministro de Repuestos e Insumos</div>
+          <div class="card-desc">Suministro de repuestos originales y componentes industriales. Gestión de insumos técnicos con un solo punto de contacto para toda tu maquinaria.</div>
+          <div class="card-tags"><span class="tag">Repuestos OEM</span><span class="tag">Componentes</span><span class="tag">Insumos Técnicos</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=8F=97=EF=B8=8F</div>
-          <div class=3D"card-title">Adecuaci=C3=B3n de =C3=81reas Locativas=
-</div>
-          <div class=3D"card-desc">Adecuaci=C3=B3n y mantenimiento de los e=
-spacios f=C3=ADsicos donde opera la maquinaria, garantizando condiciones =
-=C3=B3ptimas de higiene y seguridad industrial.</div>
-          <div class=3D"card-tags"><span class=3D"tag tag-orange">Adecuacio=
-nes</span><span class=3D"tag tag-orange">Seguridad Ind.</span><span class=
-=3D"tag tag-orange">Locativas</span></div>
+        <div class="service-card">
+          <div class="card-icon">🏗️</div>
+          <div class="card-title">Adecuación de Áreas Locativas</div>
+          <div class="card-desc">Adecuación y mantenimiento de los espacios físicos donde opera la maquinaria, garantizando condiciones óptimas de higiene y seguridad industrial.</div>
+          <div class="card-tags"><span class="tag tag-orange">Adecuaciones</span><span class="tag tag-orange">Seguridad Ind.</span><span class="tag tag-orange">Locativas</span></div>
         </div>
-        <div class=3D"service-card">
-          <div class=3D"card-icon">=F0=9F=93=88</div>
-          <div class=3D"card-title">Venta de Maquinaria Industrial</div>
-          <div class=3D"card-desc">Comercializaci=C3=B3n de equipos industr=
-iales de =C3=BAltima generaci=C3=B3n, escalables y adaptables al crecimient=
-o y evoluci=C3=B3n de tu proyecto productivo.</div>
-          <div class=3D"card-tags"><span class=3D"tag">Alta Tecnolog=C3=ADa=
-</span><span class=3D"tag">Escalabilidad</span><span class=3D"tag">Industri=
-a Alimentos</span></div>
+        <div class="service-card">
+          <div class="card-icon">📈</div>
+          <div class="card-title">Venta de Maquinaria Industrial</div>
+          <div class="card-desc">Comercialización de equipos industriales de última generación, escalables y adaptables al crecimiento y evolución de tu proyecto productivo.</div>
+          <div class="card-tags"><span class="tag">Alta Tecnología</span><span class="tag">Escalabilidad</span><span class="tag">Industria Alimentos</span></div>
         </div>
       </div>
     </div>
@@ -637,301 +952,200 @@ a Alimentos</span></div>
 </section>
 
 <!-- DIAGNOSTIC -->
-<section id=3D"diagnostico">
-  <div class=3D"section-inner">
-    <div class=3D"section-tag">Evaluaci=C3=B3n Gratuita</div>
-    <h2>Diagn=C3=B3stico 360=C2=B0</h2>
-    <p class=3D"section-desc" style=3D"margin-bottom:48px;">Responde estas =
-preguntas y obt=C3=A9n un an=C3=A1lisis personalizado con recomendaciones e=
-spec=C3=ADficas para tu operaci=C3=B3n.</p>
+<section id="diagnostico">
+  <div class="section-inner">
+    <div class="section-tag">Evaluación Gratuita</div>
+    <h2>Diagnóstico 360°</h2>
+    <p class="section-desc" style="margin-bottom:48px;">Responde estas preguntas y obtén un análisis personalizado con recomendaciones específicas para tu operación.</p>
 
-    <div class=3D"diag-wrap">
-      <div class=3D"diag-top">
-        <div class=3D"diag-badge">360</div>
-        <div class=3D"diag-top-text">
-          <h3>Diagn=C3=B3stico de Madurez Operativa</h3>
-          <p>Evaluaci=C3=B3n en 6 dimensiones =C2=B7 Resultado inmediato =
-=C2=B7 100% gratuito</p>
+    <div class="diag-wrap">
+      <div class="diag-top">
+        <div class="diag-badge">360</div>
+        <div class="diag-top-text">
+          <h3>Diagnóstico de Madurez Operativa</h3>
+          <p>Evaluación en 6 dimensiones · Resultado inmediato · 100% gratuito</p>
         </div>
       </div>
-      <div class=3D"diag-body">
+      <div class="diag-body">
 
-        <div id=3D"formPanel">
-          <div class=3D"prog-row"><span>Progreso</span><span id=3D"progText=
-">0%</span></div>
-          <div class=3D"prog-track"><div class=3D"prog-fill" id=3D"progFill=
-" style=3D"width:0%"></div></div>
-          <div class=3D"step-dots" id=3D"stepDots"><div class=3D"step-dot a=
-ctive"></div><div class=3D"step-dot"></div><div class=3D"step-dot"></div><d=
-iv class=3D"step-dot"></div><div class=3D"step-dot"></div></div>
+        <div id="formPanel">
+          <div class="prog-row"><span>Progreso</span><span id="progText">0%</span></div>
+          <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+          <div class="step-dots" id="stepDots"><div class="step-dot active"></div><div class="step-dot"></div><div class="step-dot"></div><div class="step-dot"></div><div class="step-dot"></div></div>
 
           <!-- Step 0 -->
-          <div class=3D"form-step active" data-step=3D"0">
-            <div class=3D"form-step-header">
-              <h4>Informaci=C3=B3n de Contacto</h4>
-              <p>Para enviarte tu diagn=C3=B3stico personalizado</p>
+          <div class="form-step active" data-step="0">
+            <div class="form-step-header">
+              <h4>Información de Contacto</h4>
+              <p>Para enviarte tu diagnóstico personalizado</p>
             </div>
-            <div class=3D"form-grid">
-              <div class=3D"field"><label>Nombre completo *</label><input i=
-d=3D"fName" type=3D"text" placeholder=3D"Tu nombre"></div>
-              <div class=3D"field"><label>Empresa *</label><input id=3D"fCo=
-mpany" type=3D"text" placeholder=3D"Nombre de tu empresa"></div>
-              <div class=3D"field"><label>Email *</label><input id=3D"fEmai=
-l" type=3D"email" placeholder=3D"tu@email.com"></div>
-              <div class=3D"field"><label>WhatsApp / Tel=C3=A9fono</label><=
-input id=3D"fPhone" type=3D"tel" placeholder=3D"+57 300 000 0000"></div>
+            <div class="form-grid">
+              <div class="field"><label>Nombre completo *</label><input id="fName" type="text" placeholder="Tu nombre"></div>
+              <div class="field"><label>Empresa *</label><input id="fCompany" type="text" placeholder="Nombre de tu empresa"></div>
+              <div class="field"><label>Email *</label><input id="fEmail" type="email" placeholder="tu@email.com"></div>
+              <div class="field"><label>WhatsApp / Teléfono</label><input id="fPhone" type="tel" placeholder="+57 300 000 0000"></div>
             </div>
-            <div class=3D"field">
+            <div class="field">
               <label>Sector / Industria</label>
-              <select id=3D"fIndustry">
-                <option value=3D"">Selecciona tu sector</option>
-                <option value=3D"manufactura">Manufactura</option>
-                <option value=3D"comercio">Comercio / Retail</option>
-                <option value=3D"alimentos">Alimentos y Bebidas</option>
-                <option value=3D"farmaceutica">Farmac=C3=A9utica</option>
-                <option value=3D"tecnologia">Tecnolog=C3=ADa</option>
-                <option value=3D"construccion">Construcci=C3=B3n</option>
-                <option value=3D"agro">Agroindustria</option>
-                <option value=3D"servicios">Servicios</option>
-                <option value=3D"otro">Otro</option>
+              <select id="fIndustry">
+                <option value="">Selecciona tu sector</option>
+                <option value="manufactura">Manufactura</option>
+                <option value="comercio">Comercio / Retail</option>
+                <option value="alimentos">Alimentos y Bebidas</option>
+                <option value="farmaceutica">Farmacéutica</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="construccion">Construcción</option>
+                <option value="agro">Agroindustria</option>
+                <option value="servicios">Servicios</option>
+                <option value="otro">Otro</option>
               </select>
             </div>
           </div>
 
           <!-- Step 1: Tech/Digital -->
-          <div class=3D"form-step" data-step=3D"1">
-            <div class=3D"form-step-header">
-              <h4>=F0=9F=92=BB Tecnolog=C3=ADa y Digitalizaci=C3=B3n</h4>
-              <p>Eval=C3=BAa el nivel digital de tu empresa</p>
+          <div class="form-step" data-step="1">
+            <div class="form-step-header">
+              <h4>💻 Tecnología y Digitalización</h4>
+              <p>Evalúa el nivel digital de tu empresa</p>
             </div>
-            <div class=3D"q-label">=C2=BFQu=C3=A9 nivel de digitalizaci=C3=
-=B3n tiene tu empresa actualmente?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q1=
-" value=3D"1"><span>Procesos 100% manuales, sin sistemas digitales</span></=
-label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q1=
-" value=3D"2"><span>Usamos Excel y correo electr=C3=B3nico principalmente</=
-span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q1=
-" value=3D"3"><span>Tenemos software b=C3=A1sico pero sistemas desconectado=
-s</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q1=
-" value=3D"4"><span>Plataformas integradas con datos en tiempo real</span><=
-/label>
+            <div class="q-label">¿Qué nivel de digitalización tiene tu empresa actualmente?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q1" value="1"><span>Procesos 100% manuales, sin sistemas digitales</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="2"><span>Usamos Excel y correo electrónico principalmente</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="3"><span>Tenemos software básico pero sistemas desconectados</span></label>
+              <label class="option-item"><input type="radio" name="q1" value="4"><span>Plataformas integradas con datos en tiempo real</span></label>
             </div>
-            <div class=3D"q-label">=C2=BFUtilizas IA o automatizaci=C3=B3n =
-en alg=C3=BAn proceso?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q2=
-" value=3D"1"><span>No, todo es manual</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q2=
-" value=3D"2"><span>Algunas macros o automatizaciones b=C3=A1sicas</span></=
-label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q2=
-" value=3D"3"><span>Herramientas de automatizaci=C3=B3n en =C3=A1reas espec=
-=C3=ADficas</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q2=
-" value=3D"4"><span>IA y automatizaci=C3=B3n integradas en m=C3=BAltiples p=
-rocesos</span></label>
+            <div class="q-label">¿Utilizas IA o automatización en algún proceso?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q2" value="1"><span>No, todo es manual</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="2"><span>Algunas macros o automatizaciones básicas</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="3"><span>Herramientas de automatización en áreas específicas</span></label>
+              <label class="option-item"><input type="radio" name="q2" value="4"><span>IA y automatización integradas en múltiples procesos</span></label>
             </div>
           </div>
 
           <!-- Step 2: Operations -->
-          <div class=3D"form-step" data-step=3D"2">
-            <div class=3D"form-step-header">
-              <h4>=E2=9A=99=EF=B8=8F Operaciones y Calidad</h4>
-              <p>Eval=C3=BAa tu gesti=C3=B3n operativa y de calidad</p>
+          <div class="form-step" data-step="2">
+            <div class="form-step-header">
+              <h4>⚙️ Operaciones y Calidad</h4>
+              <p>Evalúa tu gestión operativa y de calidad</p>
             </div>
-            <div class=3D"q-label">=C2=BFC=C3=B3mo gestionas el control de =
-calidad en tu operaci=C3=B3n?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q3=
-" value=3D"1"><span>No existe proceso formal de calidad</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q3=
-" value=3D"2"><span>Revisiones informales sin documentaci=C3=B3n</span></la=
-bel>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q3=
-" value=3D"3"><span>Procesos documentados, sin certificaci=C3=B3n</span></l=
-abel>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q3=
-" value=3D"4"><span>Sistema de calidad certificado o en certificaci=C3=B3n<=
-/span></label>
+            <div class="q-label">¿Cómo gestionas el control de calidad en tu operación?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q3" value="1"><span>No existe proceso formal de calidad</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="2"><span>Revisiones informales sin documentación</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="3"><span>Procesos documentados, sin certificación</span></label>
+              <label class="option-item"><input type="radio" name="q3" value="4"><span>Sistema de calidad certificado o en certificación</span></label>
             </div>
-            <div class=3D"q-label">=C2=BFQu=C3=A9 porcentaje de tiempos mue=
-rtos/desperdicios estimas?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q4=
-" value=3D"1"><span>M=C3=A1s del 30% - Es un problema grave</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q4=
-" value=3D"2"><span>Entre 15% y 30% - Alto</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q4=
-" value=3D"3"><span>Entre 5% y 15% - Moderado</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q4=
-" value=3D"4"><span>Menos del 5% - Bien controlado</span></label>
+            <div class="q-label">¿Qué porcentaje de tiempos muertos/desperdicios estimas?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q4" value="1"><span>Más del 30% - Es un problema grave</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="2"><span>Entre 15% y 30% - Alto</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="3"><span>Entre 5% y 15% - Moderado</span></label>
+              <label class="option-item"><input type="radio" name="q4" value="4"><span>Menos del 5% - Bien controlado</span></label>
             </div>
           </div>
 
           <!-- Step 3: Admin -->
-          <div class=3D"form-step" data-step=3D"3">
-            <div class=3D"form-step-header">
-              <h4>=F0=9F=A4=9D Administraci=C3=B3n y RRHH</h4>
-              <p>Eval=C3=BAa tu gesti=C3=B3n administrativa</p>
+          <div class="form-step" data-step="3">
+            <div class="form-step-header">
+              <h4>🤝 Administración y RRHH</h4>
+              <p>Evalúa tu gestión administrativa</p>
             </div>
-            <div class=3D"q-label">=C2=BFC=C3=B3mo llevas la gesti=C3=B3n d=
-e n=C3=B3mina y seguridad social?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q5=
-" value=3D"1"><span>Manualmente, con mucho riesgo de error</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q5=
-" value=3D"2"><span>Excel con algunos automatismos</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q5=
-" value=3D"3"><span>Software b=C3=A1sico de n=C3=B3mina</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q5=
-" value=3D"4"><span>Sistema integrado con PILA y seguridad social</span></l=
-abel>
+            <div class="q-label">¿Cómo llevas la gestión de nómina y seguridad social?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q5" value="1"><span>Manualmente, con mucho riesgo de error</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="2"><span>Excel con algunos automatismos</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="3"><span>Software básico de nómina</span></label>
+              <label class="option-item"><input type="radio" name="q5" value="4"><span>Sistema integrado con PILA y seguridad social</span></label>
             </div>
-            <div class=3D"q-label">=C2=BFC=C3=B3mo gestionas la cartera y l=
-os pagos a proveedores?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q6=
-" value=3D"1"><span>Sin control ni seguimiento formal</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q6=
-" value=3D"2"><span>Listas manuales o en Excel</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q6=
-" value=3D"3"><span>Software contable b=C3=A1sico</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q6=
-" value=3D"4"><span>Sistema integrado con alertas y reportes</span></label>
+            <div class="q-label">¿Cómo gestionas la cartera y los pagos a proveedores?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q6" value="1"><span>Sin control ni seguimiento formal</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="2"><span>Listas manuales o en Excel</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="3"><span>Software contable básico</span></label>
+              <label class="option-item"><input type="radio" name="q6" value="4"><span>Sistema integrado con alertas y reportes</span></label>
             </div>
           </div>
 
           <!-- Step 4: Priorities -->
-          <div class=3D"form-step" data-step=3D"4">
-            <div class=3D"form-step-header">
-              <h4>=F0=9F=8E=AF Prioridades y Objetivos</h4>
-              <p>Cu=C3=A9ntanos qu=C3=A9 es m=C3=A1s urgente para ti</p>
+          <div class="form-step" data-step="4">
+            <div class="form-step-header">
+              <h4>🎯 Prioridades y Objetivos</h4>
+              <p>Cuéntanos qué es más urgente para ti</p>
             </div>
-            <div class=3D"q-label">=C2=BFCu=C3=A1l es tu principal dolor op=
-erativo? (puedes marcar varios)</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"errores"><span>Errores frecuentes en procesos manuales</span>=
-</label>
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"visibilidad"><span>Falta de visibilidad de datos en tiempo re=
-al</span></label>
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"cumplimiento"><span>Riesgos de incumplimiento normativo</span=
-></label>
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"costos"><span>Costos operativos elevados</span></label>
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"personas"><span>Problemas con la gesti=C3=B3n del equipo</spa=
-n></label>
-              <label class=3D"option-item"><input type=3D"checkbox" name=3D=
-"q7" value=3D"tecnologia"><span>Falta de tecnolog=C3=ADa actualizada</span>=
-</label>
+            <div class="q-label">¿Cuál es tu principal dolor operativo? (puedes marcar varios)</div>
+            <div class="options-list">
+              <label class="option-item"><input type="checkbox" name="q7" value="errores"><span>Errores frecuentes en procesos manuales</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="visibilidad"><span>Falta de visibilidad de datos en tiempo real</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="cumplimiento"><span>Riesgos de incumplimiento normativo</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="costos"><span>Costos operativos elevados</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="personas"><span>Problemas con la gestión del equipo</span></label>
+              <label class="option-item"><input type="checkbox" name="q7" value="tecnologia"><span>Falta de tecnología actualizada</span></label>
             </div>
-            <div class=3D"q-label">=C2=BFQu=C3=A9 tan pronto necesitas ver =
-resultados?</div>
-            <div class=3D"options-list">
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q8=
-" value=3D"urgente"><span>Urgente =E2=80=94 Lo antes posible</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q8=
-" value=3D"trimestre"><span>Este trimestre</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q8=
-" value=3D"semestre"><span>En los pr=C3=B3ximos 6 meses</span></label>
-              <label class=3D"option-item"><input type=3D"radio" name=3D"q8=
-" value=3D"explorando"><span>Estoy explorando opciones</span></label>
+            <div class="q-label">¿Qué tan pronto necesitas ver resultados?</div>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="q8" value="urgente"><span>Urgente — Lo antes posible</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="trimestre"><span>Este trimestre</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="semestre"><span>En los próximos 6 meses</span></label>
+              <label class="option-item"><input type="radio" name="q8" value="explorando"><span>Estoy explorando opciones</span></label>
             </div>
-            <div class=3D"field" style=3D"margin-top:20px;">
+            <div class="field" style="margin-top:20px;">
               <label>Comentarios adicionales (opcional)</label>
-              <textarea id=3D"fComments" rows=3D"3" placeholder=3D"Cu=C3=A9=
-ntanos m=C3=A1s sobre tus desaf=C3=ADos espec=C3=ADficos..."></textarea>
+              <textarea id="fComments" rows="3" placeholder="Cuéntanos más sobre tus desafíos específicos..."></textarea>
             </div>
           </div>
 
-          <div class=3D"diag-nav">
-            <button class=3D"btn-back" id=3D"btnBack" style=3D"display:none=
-">
-              <svg width=3D"16" height=3D"16" fill=3D"none" stroke=3D"curre=
-ntColor" viewBox=3D"0 0 24 24"><path stroke-linecap=3D"round" stroke-linejo=
-in=3D"round" stroke-width=3D"2" d=3D"M15 19l-7-7 7-7"></path></svg>
+          <div class="diag-nav">
+            <button class="btn-back" id="btnBack" onclick="diagStep(-1)" style="display:none">
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
               Anterior
             </button>
-            <button class=3D"btn-next" id=3D"btnNext">
+            <button class="btn-next" id="btnNext" onclick="diagStep(1)">
               Siguiente
-              <svg width=3D"16" height=3D"16" fill=3D"none" stroke=3D"curre=
-ntColor" viewBox=3D"0 0 24 24"><path stroke-linecap=3D"round" stroke-linejo=
-in=3D"round" stroke-width=3D"2" d=3D"M9 5l7 7-7 7"></path></svg>
+              <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
           </div>
         </div>
 
         <!-- RESULTS -->
-        <div id=3D"resultsPanel">
-          <div class=3D"res-score-ring">
-            <svg width=3D"160" height=3D"160" viewBox=3D"0 0 160 160">
-              <circle cx=3D"80" cy=3D"80" r=3D"68" fill=3D"none" stroke=3D"=
-rgba(255,255,255,0.06)" stroke-width=3D"10"></circle>
-              <circle id=3D"scoreCircle" cx=3D"80" cy=3D"80" r=3D"68" fill=
-=3D"none" stroke=3D"url(#scoreGrad)" stroke-width=3D"10" stroke-linecap=3D"=
-round" stroke-dasharray=3D"0 427" style=3D"transform:rotate(-90deg);transfo=
-rm-origin:80px 80px;transition:stroke-dasharray 1.2s ease;"></circle>
+        <div id="resultsPanel">
+          <div class="res-score-ring">
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="10"></circle>
+              <circle id="scoreCircle" cx="80" cy="80" r="68" fill="none" stroke="url(#scoreGrad)" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 427" style="transform:rotate(-90deg);transform-origin:80px 80px;transition:stroke-dasharray 1.2s ease;"></circle>
               <defs>
-                <linearGradient id=3D"scoreGrad" x1=3D"0%" y1=3D"0%" x2=3D"=
-100%" y2=3D"0%">
-                  <stop offset=3D"0%" stop-color=3D"#f97316"></stop>
-                  <stop offset=3D"100%" stop-color=3D"#38bdf8"></stop>
-                </linearGradient>
+                <lineargradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#f97316"></stop>
+                  <stop offset="100%" stop-color="#38bdf8"></stop>
+                </lineargradient>
               </defs>
             </svg>
-            <div class=3D"score-label" id=3D"scoreNum">0</div>
-            <div class=3D"score-sub" id=3D"scoreLvl">Calculando...</div>
+            <div class="score-label" id="scoreNum">0</div>
+            <div class="score-sub" id="scoreLvl">Calculando...</div>
           </div>
 
-          <div style=3D"text-align:center;margin-bottom:36px;">
-            <h3 style=3D"font-family:'Syne',sans-serif;font-size:22px;font-=
-weight:700;margin-bottom:6px;">
-              Diagn=C3=B3stico para <span id=3D"rCompany">tu empresa</span>
+          <div style="text-align:center;margin-bottom:36px;">
+            <h3 style="font-family:&#39;Syne&#39;,sans-serif;font-size:22px;font-weight:700;margin-bottom:6px;">
+              Diagnóstico para <span id="rCompany">tu empresa</span>
             </h3>
-            <p style=3D"color:var(--muted);font-size:14px;">Hola <span id=
-=3D"rName"></span>, aqu=C3=AD est=C3=A1 tu an=C3=A1lisis 360=C2=B0</p>
+            <p style="color:var(--muted);font-size:14px;">Hola <span id="rName"></span>, aquí está tu análisis 360°</p>
           </div>
 
-          <div class=3D"area-scores" id=3D"areaScores"></div>
+          <div class="area-scores" id="areaScores"></div>
 
-          <div class=3D"recs-title">Plan de Acci=C3=B3n Recomendado</div>
-          <div id=3D"recsContainer"></div>
+          <div class="recs-title">Plan de Acción Recomendado</div>
+          <div id="recsContainer"></div>
 
-          <div class=3D"res-cta">
-            <h4>=C2=BFQuieres profundizar en este diagn=C3=B3stico?</h4>
-            <p>Agenda una consulta gratuita con nuestro equipo y dise=C3=B1=
-emos juntos tu hoja de ruta.</p>
-            <div class=3D"res-btns">
-              <a id=3D"waLink" href=3D"file:///C:/Users/Usuario/Downloads/m=
-g360_2.html#" target=3D"_blank" class=3D"btn-primary">
-                <svg width=3D"18" height=3D"18" fill=3D"currentColor" viewB=
-ox=3D"0 0 24 24"><path d=3D"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-=
-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.6=
-44.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173=
--.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.49=
-7.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-=
-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.0=
-4 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 =
-4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758=
--.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347=
-m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.6=
-48-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.6=
-4 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.8=
-84-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157=
- 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0=
-05.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48=
--8.413z"></path></svg>
+          <div class="res-cta">
+            <h4>¿Quieres profundizar en este diagnóstico?</h4>
+            <p>Agenda una consulta gratuita con nuestro equipo y diseñemos juntos tu hoja de ruta.</p>
+            <div class="res-btns">
+              <a id="waLink" href="file:///C:/Users/Usuario/Downloads/mg360_4.html#" target="_blank" class="btn-primary">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
                 Agendar por WhatsApp
               </a>
-              <button class=3D"btn-outline">=E2=86=90 Nuevo diagn=C3=B3stic=
-o</button>
+              <button onclick="restartDiag()" class="btn-outline">← Nuevo diagnóstico</button>
             </div>
           </div>
         </div>
@@ -942,59 +1156,44 @@ o</button>
 </section>
 
 <!-- CONTACT -->
-<section id=3D"contacto">
-  <div class=3D"section-inner">
-    <div class=3D"contact-grid">
-      <div class=3D"contact-info">
-        <div class=3D"section-tag">Cont=C3=A1ctanos</div>
-        <h2>=C2=BFListo para transformar tu operaci=C3=B3n?</h2>
-        <p>Agenda una consulta gratuita con nuestro equipo y descubre c=C3=
-=B3mo Motion Group 360 puede llevar tu empresa al siguiente nivel.</p>
-        <div class=3D"contact-methods">
-          <div class=3D"contact-method">
-            <div class=3D"contact-method-icon" style=3D"background:rgba(34,=
-197,94,0.1);border:1px solid rgba(34,197,94,0.2);">=F0=9F=93=B1</div>
-            <div class=3D"contact-method-text">
+<section id="contacto">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Contáctanos</div>
+        <h2>¿Listo para transformar tu operación?</h2>
+        <p>Agenda una consulta gratuita con nuestro equipo y descubre cómo Motion Group 360 puede llevar tu empresa al siguiente nivel.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);">📱</div>
+            <div class="contact-method-text">
               <strong>WhatsApp</strong>
-              <a href=3D"https://wa.me/573246091847" target=3D"_blank">+57 =
-324 609 1847</a>
+              <a href="https://wa.me/573246091847" target="_blank">+57 324 609 1847</a>
             </div>
           </div>
-          <div class=3D"contact-method">
-            <div class=3D"contact-method-icon" style=3D"background:rgba(249=
-,115,22,0.1);border:1px solid rgba(249,115,22,0.2);">=E2=9C=89=EF=B8=8F</di=
-v>
-            <div class=3D"contact-method-text">
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);">✉️</div>
+            <div class="contact-method-text">
               <strong>Email</strong>
-              <a href=3D"mailto:Motion360group@gmail.com">Motion360group@gm=
-ail.com</a>
+              <a href="mailto:Motion360group@gmail.com">Motion360group@gmail.com</a>
             </div>
           </div>
-          <div class=3D"contact-method">
-            <div class=3D"contact-method-icon" style=3D"background:rgba(56,=
-189,248,0.1);border:1px solid rgba(56,189,248,0.2);">=F0=9F=93=8D</div>
-            <div class=3D"contact-method-text">
-              <strong>Ubicaci=C3=B3n</strong>
-              <span>Medell=C3=ADn, Colombia</span>
+          <div class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);">📍</div>
+            <div class="contact-method-text">
+              <strong>Ubicación</strong>
+              <span>Medellín, Colombia</span>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div style=3D"background:var(--surface);border:1px solid var(--bord=
-er);border-radius:20px;padding:36px;">
-          <h3 style=3D"font-family:'Syne',sans-serif;font-size:20px;font-we=
-ight:700;margin-bottom:24px;">Escr=C3=ADbenos ahora</h3>
-          <div class=3D"field"><label>Nombre</label><input type=3D"text" pl=
-aceholder=3D"Tu nombre"></div>
-          <div class=3D"field"><label>Email</label><input type=3D"email" pl=
-aceholder=3D"tu@email.com"></div>
-          <div class=3D"field"><label>Mensaje</label><textarea rows=3D"4" p=
-laceholder=3D"Cu=C3=A9ntanos sobre tu empresa y lo que necesitas..."></text=
-area></div>
-          <a href=3D"https://wa.me/573246091847" target=3D"_blank" class=3D=
-"btn-primary" style=3D"width:100%;justify-content:center;display:flex;margi=
-n-top:8px;">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;">
+          <h3 style="font-family:&#39;Syne&#39;,sans-serif;font-size:20px;font-weight:700;margin-bottom:24px;">Escríbenos ahora</h3>
+          <div class="field"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
+          <div class="field"><label>Mensaje</label><textarea rows="4" placeholder="Cuéntanos sobre tu empresa y lo que necesitas..."></textarea></div>
+          <a href="https://wa.me/573246091847" target="_blank" class="btn-primary" style="width:100%;justify-content:center;display:flex;margin-top:8px;">
             Enviar por WhatsApp
           </a>
         </div>
@@ -1005,695 +1204,213 @@ n-top:8px;">
 
 <!-- FOOTER -->
 <footer>
-  <div style=3D"display:flex;align-items:center;justify-content:center;gap:=
-12px;margin-bottom:12px;">
-    <div class=3D"logo-badge">MG3</div>
-    <span style=3D"font-family:'Syne',sans-serif;font-weight:700;color:var(=
---text);">Motion Group 360</span>
+  <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px;">
+    <div class="logo-badge">MG3</div>
+    <span style="font-family:&#39;Syne&#39;,sans-serif;font-weight:700;color:var(--text);">Motion Group 360</span>
   </div>
-  <p><strong>Eficiencia desde todos los =C3=A1ngulos</strong> =C2=B7 =C2=A9=
- 2025 Motion Group 360. Todos los derechos reservados.</p>
+  <p><strong>Eficiencia desde todos los ángulos</strong> · © 2025 Motion Group 360. Todos los derechos reservados.</p>
 </footer>
 
+<script>
+// ─── MODULE TABS ───
+function switchModule(idx) {
+  document.querySelectorAll('.mod-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.module-panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+}
 
+// ─── DIAGNOSTIC ───
+let diagCurrent = 0;
+const TOTAL_STEPS = 5;
+const diagAnswers = {};
+
+function initDots() {
+  const c = document.getElementById('stepDots');
+  c.innerHTML = '';
+  for(let i=0;i<TOTAL_STEPS;i++){
+    const d = document.createElement('div');
+    d.className = 'step-dot' + (i===0?' active':i<0?' done':'');
+    c.appendChild(d);
+  }
+}
+initDots();
+
+function updateDiagUI() {
+  const pct = (diagCurrent/(TOTAL_STEPS-1))*100;
+  document.getElementById('progFill').style.width = pct+'%';
+  document.getElementById('progText').textContent = Math.round(pct)+'%';
+  document.querySelectorAll('.step-dot').forEach((d,i)=>{
+    d.className = 'step-dot' + (i===diagCurrent?' active':i<diagCurrent?' done':'');
+  });
+  document.getElementById('btnBack').style.display = diagCurrent===0?'none':'flex';
+  const nb = document.getElementById('btnNext');
+  if(diagCurrent===TOTAL_STEPS-1){
+    nb.innerHTML='Ver mi Diagnóstico <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>';
+  } else {
+    nb.innerHTML='Siguiente <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+  }
+}
+
+function diagStep(dir) {
+  if(dir===1 && !validateDiagStep()) return;
+  if(dir===1 && diagCurrent===TOTAL_STEPS-1){ showDiagResults(); return; }
+  diagCurrent = Math.max(0, Math.min(TOTAL_STEPS-1, diagCurrent+dir));
+  document.querySelectorAll('.form-step').forEach((s,i)=>s.classList.toggle('active',i===diagCurrent));
+  updateDiagUI();
+}
+
+function validateDiagStep() {
+  const step = document.querySelector(`.form-step[data-step="${diagCurrent}"]`);
+  if(diagCurrent===0){
+    const n=document.getElementById('fName').value.trim();
+    const e=document.getElementById('fEmail').value.trim();
+    const co=document.getElementById('fCompany').value.trim();
+    if(!n||!e||!co){ alert('Por favor completa Nombre, Empresa y Email'); return false; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){ alert('Email inválido'); return false; }
+    diagAnswers.contact = {name:n,email:e,company:co,phone:document.getElementById('fPhone').value,industry:document.getElementById('fIndustry').value};
+    return true;
+  }
+  // validate radio groups
+  const radios = [...step.querySelectorAll('input[type=radio]')];
+  const groups = [...new Set(radios.map(r=>r.name))];
+  for(const g of groups){
+    if(!step.querySelector(`input[name="${g}"]:checked`)){
+      alert('Por favor responde todas las preguntas');
+      return false;
+    }
+    diagAnswers[g] = step.querySelector(`input[name="${g}"]:checked`).value;
+  }
+  const checks = [...step.querySelectorAll('input[type=checkbox]:checked')];
+  if(checks.length>0) diagAnswers.painPoints = checks.map(c=>c.value);
+  return true;
+}
+
+function calcScores() {
+  return {
+    tech: ((+diagAnswers.q1||1)+(+diagAnswers.q2||1))/8*100,
+    ops:  ((+diagAnswers.q3||1)+(+diagAnswers.q4||1))/8*100,
+    admin:((+diagAnswers.q5||1)+(+diagAnswers.q6||1))/8*100,
+  };
+}
+
+const LEVELS = [
+  {max:40, label:'Crítico', color:'#ef4444'},
+  {max:60, label:'En Desarrollo', color:'#f59e0b'},
+  {max:80, label:'Bueno', color:'#38bdf8'},
+  {max:101, label:'Óptimo', color:'#10b981'},
+];
+function getLevel(s){ return LEVELS.find(l=>s<l.max); }
+
+const RECS = {
+  tech:{
+    low:['Migrar procesos manuales a herramientas digitales básicas','Implementar sistema de gestión centralizado','Digitalizar flujos de aprobación y comunicación interna'],
+    med:['Integrar plataformas y conectar datos entre áreas','Implementar automatización en procesos repetitivos','Desarrollar dashboards de monitoreo en tiempo real'],
+    high:['Explorar IA para análisis predictivo y toma de decisiones','Implementar arquitectura cloud y escalabilidad','Desarrollar capacidades de data analytics avanzado'],
+  },
+  ops:{
+    low:['Documentar y estandarizar procesos clave inmediatamente','Identificar y medir tiempos muertos y desperdicios','Implementar control de calidad básico y trazabilidad'],
+    med:['Implementar metodología Lean/Six Sigma','Certificar o estructurar el sistema de calidad','Automatizar control de producción e inventarios'],
+    high:['Implementar mejora continua con PDCA y KPIs avanzados','Explorar IoT para monitoreo de producción','Desarrollar análisis predictivo de fallas y capacidad'],
+  },
+  admin:{
+    low:['Digitalizar nómina y seguridad social de forma urgente','Implementar control de cartera y pagos estructurado','Documentar políticas básicas de RRHH'],
+    med:['Integrar sistema contable con nómina y PILA','Automatizar reportes de cartera y flujo de caja','Desarrollar proceso formal de gestión del talento'],
+    high:['Implementar BI financiero y dashboards ejecutivos','Desarrollar estrategia de cultura organizacional','Automatizar ciclo completo de gestión de personal'],
+  },
+};
+
+function getRecs(area, score) {
+  const k = score<40?'low':score<75?'med':'high';
+  return RECS[area][k];
+}
+
+function showDiagResults() {
+  const scores = calcScores();
+  const avg = (scores.tech+scores.ops+scores.admin)/3;
+  const lvl = getLevel(avg);
+
+  document.getElementById('formPanel').style.display='none';
+  document.getElementById('resultsPanel').style.display='block';
+
+  document.getElementById('rCompany').textContent = diagAnswers.contact.company;
+  document.getElementById('rName').textContent = diagAnswers.contact.name;
+
+  // Animate score
+  let cur=0;
+  const target=Math.round(avg);
+  const iv=setInterval(()=>{
+    cur=Math.min(cur+2, target);
+    document.getElementById('scoreNum').textContent=cur;
+    const dash=(cur/100)*427;
+    document.getElementById('scoreCircle').setAttribute('stroke-dasharray',`${dash} 427`);
+    if(cur>=target) clearInterval(iv);
+  },20);
+  document.getElementById('scoreLvl').textContent='Madurez: '+lvl.label;
+
+  // Area scores
+  const areas = [
+    {name:'Tecnología & Digital', score:scores.tech},
+    {name:'Operaciones & Calidad', score:scores.ops},
+    {name:'Administración & RRHH', score:scores.admin},
+  ];
+  document.getElementById('areaScores').innerHTML = areas.map(a=>`
+    <div class="area-score-item">
+      <div class="area-name">${a.name}</div>
+      <div class="area-bar"><div class="area-bar-fill" style="width:${a.score}%"></div></div>
+      <div class="area-pct">${Math.round(a.score)}% · ${getLevel(a.score).label}</div>
+    </div>
+  `).join('');
+
+  // Recs
+  const recAreas = [
+    {key:'tech',name:'💻 Tecnología & Digital', score:scores.tech},
+    {key:'ops',name:'⚙️ Operaciones & Calidad', score:scores.ops},
+    {key:'admin',name:'🤝 Administración & RRHH', score:scores.admin},
+  ];
+  document.getElementById('recsContainer').innerHTML = recAreas.map(a=>`
+    <div class="rec-block">
+      <div class="rec-area">${a.name} — ${getLevel(a.score).label}</div>
+      <ul class="rec-list">${getRecs(a.key,a.score).map(r=>`<li>${r}</li>`).join('')}</ul>
+    </div>
+  `).join('');
+
+  // WA link
+  const msg = `Hola, acabo de completar el diagnóstico 360° para ${diagAnswers.contact.company}. Mi puntaje fue ${Math.round(avg)}/100. Me gustaría agendar una consulta.`;
+  document.getElementById('waLink').href = `https://wa.me/573246091847?text=${encodeURIComponent(msg)}`;
+}
+
+function restartDiag(){
+  diagCurrent=0;
+  Object.keys(diagAnswers).forEach(k=>delete diagAnswers[k]);
+  document.querySelectorAll('.form-step input').forEach(i=>{if(i.type==='radio'||i.type==='checkbox')i.checked=false;else i.value='';});
+  document.querySelectorAll('.form-step select').forEach(s=>s.selectedIndex=0);
+  document.querySelectorAll('.form-step textarea').forEach(t=>t.value='');
+  document.querySelectorAll('.form-step').forEach((s,i)=>s.classList.toggle('active',i===0));
+  document.getElementById('formPanel').style.display='block';
+  document.getElementById('resultsPanel').style.display='none';
+  updateDiagUI();
+}
+
+// ─── MOBILE MENU ───
+function toggleMenu() {
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  btn.classList.toggle('open');
+  menu.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+// Close menu on outside click
+document.addEventListener('click', function(e) {
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  if (!btn.contains(e.target) && !menu.contains(e.target)) {
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+  }
+});
+</script>
 
 
 </body></html>
-------MultipartBoundary--b5pcSeMH7H2iazzzRuczn01tzJBvKMQoGFy6DPuUqP----
-Content-Type: text/css
-Content-Transfer-Encoding: quoted-printable
-Content-Location: https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap
-
-@charset "utf-8";
-
-@font-face { font-family: "Bebas Neue"; font-style: normal; font-weight: 40=
-0; font-display: swap; src: url("https://fonts.gstatic.com/s/bebasneue/v16/=
-JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2") format("woff2"); unicode-range: U+100-=
-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D0=
-0-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,=
- U+2C60-2C7F, U+A720-A7FF; }
-
-@font-face { font-family: "Bebas Neue"; font-style: normal; font-weight: 40=
-0; font-display: swap; src: url("https://fonts.gstatic.com/s/bebasneue/v16/=
-JTUSjIg69CK48gW7PXoo9Wlhyw.woff2") format("woff2"); unicode-range: U+0-FF, =
-U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+20=
-00-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2") format("woff2"); unicode-range=
-: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+32=
-9, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0,=
- U+2113, U+2C60-2C7F, U+A720-A7FF; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2") format("woff2"); unicode-range: U=
-+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+32=
-9, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+F=
-FFD; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2") format("woff2"); unicode-range=
-: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+32=
-9, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0,=
- U+2113, U+2C60-2C7F, U+A720-A7FF; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2") format("woff2"); unicode-range: U=
-+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+32=
-9, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+F=
-FFD; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2") format("woff2"); unicode-range=
-: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+32=
-9, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0,=
- U+2113, U+2C60-2C7F, U+A720-A7FF; }
-
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; =
-font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2=
-ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2") format("woff2"); unicode-range: U=
-+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+32=
-9, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+F=
-FFD; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 400; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
--38A, U+38C, U+38E-3A1, U+3A3-3FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 400; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
--2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
-U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
-A7FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 400; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
-BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
-22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 600; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
--38A, U+38C, U+38E-3A1, U+3A3-3FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 600; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
--2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
-U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
-A7FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 600; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
-BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
-22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
--38A, U+38C, U+38E-3A1, U+3A3-3FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
--2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
-U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
-A7FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 700; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
-BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
-22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2NL9Hz_.woff2") format("woff2"); unicode-range: U+370-377, U+37A-37F, U+384=
--38A, U+38C, U+38E-3A1, U+3A3-3FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-25L9Hz_.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7=
--2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, =
-U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-=
-A7FF; }
-
-@font-face { font-family: Syne; font-style: normal; font-weight: 800; font-=
-display: swap; src: url("https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm=
-2BL9A.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
-BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+21=
-22, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--b5pcSeMH7H2iazzzRuczn01tzJBvKMQoGFy6DPuUqP----
-Content-Type: text/css
-Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-173cb310-a549-45d5-a5a4-a44fc9b8e97b@mhtml.blink
-
-@charset "utf-8";
-
-:root { --bg: #060810; --bg2: #0a0d18; --surface: #0f1220; --surface2: #151=
-828; --border: rgba(255,255,255,0.07); --orange: #f97316; --orange2: #fb923=
-c; --orange-glow: rgba(249,115,22,0.18); --blue: #38bdf8; --blue2: #0ea5e9;=
- --blue-glow: rgba(56,189,248,0.15); --text: #f1f5f9; --muted: #94a3b8; --d=
-im: #475569; }
-
-*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
-
-html { scroll-behavior: smooth; }
-
-body { background: var(--bg); color: var(--text); font-family: "DM Sans", s=
-ans-serif; overflow-x: hidden; }
-
-body::before { content: ""; position: fixed; inset: 0px; background-image: =
-url("data:image/svg+xml,%3Csvg viewBox=3D'0 0 256 256' xmlns=3D'http://www.=
-w3.org/2000/svg'%3E%3Cfilter id=3D'noise'%3E%3CfeTurbulence type=3D'fractal=
-Noise' baseFrequency=3D'0.9' numOctaves=3D'4' stitchTiles=3D'stitch'/%3E%3C=
-/filter%3E%3Crect width=3D'100%25' height=3D'100%25' filter=3D'url(%23noise=
-)' opacity=3D'0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; opac=
-ity: 0.4; }
-
-header { position: sticky; top: 0px; z-index: 100; background: rgba(6, 8, 1=
-6, 0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--borde=
-r); padding: 0px 40px; height: 72px; display: flex; align-items: center; ju=
-stify-content: space-between; }
-
-.logo-wrap { display: flex; align-items: center; gap: 14px; }
-
-.logo-badge { width: 46px; height: 46px; background: linear-gradient(135deg=
-, var(--orange), #c2410c); border-radius: 12px; display: flex; align-items:=
- center; justify-content: center; font-family: "Bebas Neue", sans-serif; fo=
-nt-size: 22px; color: white; box-shadow: 0 0 20px var(--orange-glow); posit=
-ion: relative; }
-
-.logo-badge::after { content: ""; position: absolute; inset: -1px; border-r=
-adius: 12px; background: linear-gradient(135deg, var(--blue), var(--orange)=
-); z-index: -1; opacity: 0.6; }
-
-.logo-text { line-height: 1.2; }
-
-.logo-text strong { display: block; font-family: Syne, sans-serif; font-wei=
-ght: 800; font-size: 17px; letter-spacing: 0.02em; background-image: ; back=
-ground-position-x: ; background-position-y: ; background-size: ; background=
--repeat: ; background-attachment: ; background-origin: ; background-color: =
-; background-clip: text; -webkit-text-fill-color: transparent; }
-
-.logo-text span { font-size: 11px; color: var(--muted); letter-spacing: 0.1=
-2em; text-transform: uppercase; }
-
-nav { display: flex; gap: 32px; align-items: center; }
-
-nav a { color: var(--muted); font-size: 14px; text-decoration: none; font-w=
-eight: 500; transition: color 0.2s; letter-spacing: 0.02em; }
-
-nav a:hover { color: var(--text); }
-
-.nav-cta { background: linear-gradient(135deg, var(--orange), #ea580c); pad=
-ding: 9px 20px; border-radius: 8px; box-shadow: 0 0 16px var(--orange-glow)=
-; color: white !important; font-weight: 600 !important; font-size: 13px !im=
-portant; transition: box-shadow 0.2s, transform 0.2s !important; }
-
-.nav-cta:hover { box-shadow: rgba(249, 115, 22, 0.4) 0px 0px 28px; transfor=
-m: translateY(-1px); }
-
-.hero { position: relative; min-height: 100vh; display: flex; align-items: =
-center; justify-content: center; overflow: hidden; padding: 100px 40px; }
-
-.hero-orb { position: absolute; border-radius: 50%; filter: blur(80px); poi=
-nter-events: none; }
-
-.orb1 { width: 600px; height: 600px; background: radial-gradient(circle, rg=
-ba(249, 115, 22, 0.22) 0%, transparent 70%); top: -100px; right: -100px; }
-
-.orb2 { width: 500px; height: 500px; background: radial-gradient(circle, rg=
-ba(56, 189, 248, 0.18) 0%, transparent 70%); bottom: -100px; left: -100px; =
-}
-
-.orb3 { width: 300px; height: 300px; background: radial-gradient(circle, rg=
-ba(249, 115, 22, 0.12) 0%, transparent 70%); top: 50%; left: 50%; transform=
-: translate(-50%, -50%); }
-
-.hero-ring { position: absolute; width: 700px; height: 700px; border: 1px s=
-olid rgba(249, 115, 22, 0.1); border-radius: 50%; top: 50%; left: 50%; tran=
-sform: translate(-50%, -50%); animation: 30s linear 0s infinite normal none=
- running spin; }
-
-.hero-ring::before { content: ""; position: absolute; width: 12px; height: =
-12px; background: var(--orange); border-radius: 50%; top: -6px; left: 50%; =
-box-shadow: 0 0 16px var(--orange); }
-
-.hero-ring2 { position: absolute; width: 500px; height: 500px; border: 1px =
-solid rgba(56, 189, 248, 0.08); border-radius: 50%; top: 50%; left: 50%; tr=
-ansform: translate(-50%, -50%); animation: 20s linear 0s infinite reverse n=
-one running spin; }
-
-@keyframes spin {=20
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.hero-content { position: relative; z-index: 2; text-align: center; max-wid=
-th: 860px; }
-
-.hero-tag { display: inline-flex; align-items: center; gap: 8px; background=
-: var(--surface); border: 1px solid var(--border); padding: 8px 16px; borde=
-r-radius: 100px; margin-bottom: 32px; font-size: 12px; color: var(--orange)=
-; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; anima=
-tion: 0.6s ease 0s 1 normal both running fadeUp; }
-
-.hero-tag .dot { width: 6px; height: 6px; background: var(--orange); border=
--radius: 50%; animation: 2s ease 0s infinite normal none running pulse; }
-
-@keyframes pulse {=20
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
-}
-
-@keyframes fadeUp {=20
-  0% { opacity: 0; transform: translateY(24px); }
-  100% { opacity: 1; transform: translateY(0px); }
-}
-
-h1 { font-family: "Bebas Neue", sans-serif; font-size: clamp(64px, 9vw, 110=
-px); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 24px; animat=
-ion: 0.6s ease 0.1s 1 normal both running fadeUp; }
-
-h1 .line-orange { background-image: ; background-position-x: ; background-p=
-osition-y: ; background-size: ; background-repeat: ; background-attachment:=
- ; background-origin: ; background-color: ; background-clip: text; -webkit-=
-text-fill-color: transparent; display: block; }
-
-.hero-sub { font-size: 18px; color: var(--muted); max-width: 560px; margin:=
- 0px auto 40px; line-height: 1.7; font-weight: 300; animation: 0.6s ease 0.=
-2s 1 normal both running fadeUp; }
-
-.hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: =
-wrap; animation: 0.6s ease 0.3s 1 normal both running fadeUp; }
-
-.btn-primary { background: linear-gradient(135deg, var(--orange), #c2410c);=
- color: white; padding: 14px 32px; border-radius: 10px; border-width: mediu=
-m; border-style: none; border-color: currentcolor; border-image: initial; c=
-ursor: pointer; font-family: "DM Sans", sans-serif; font-size: 15px; font-w=
-eight: 600; box-shadow: 0 0 28px var(--orange-glow); transition: 0.25s; tex=
-t-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
-
-.btn-primary:hover { transform: translateY(-2px); box-shadow: rgba(249, 115=
-, 22, 0.4) 0px 0px 40px; }
-
-.btn-outline { color: var(--text); padding: 14px 32px; border-radius: 10px;=
- border: 1px solid var(--border); cursor: pointer; font-family: "DM Sans", =
-sans-serif; font-size: 15px; font-weight: 500; transition: 0.25s; text-deco=
-ration: none; display: inline-flex; align-items: center; gap: 8px; backdrop=
--filter: blur(8px); background: rgba(255, 255, 255, 0.04); }
-
-.btn-outline:hover { border-color: rgba(255, 255, 255, 0.2); background: rg=
-ba(255, 255, 255, 0.07); }
-
-.stats-bar { border-top: 1px solid var(--border); border-bottom: 1px solid =
-var(--border); background: var(--surface); padding: 28px 40px; }
-
-.stats-inner { max-width: 1100px; margin: 0px auto; display: grid; grid-tem=
-plate-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
-
-.stat-num { font-family: "Bebas Neue", sans-serif; font-size: 40px; letter-=
-spacing: 0.04em; background-image: ; background-position-x: ; background-po=
-sition-y: ; background-size: ; background-repeat: ; background-attachment: =
-; background-origin: ; background-color: ; background-clip: text; -webkit-t=
-ext-fill-color: transparent; }
-
-.stat-label { font-size: 12px; color: var(--muted); letter-spacing: 0.08em;=
- text-transform: uppercase; margin-top: 4px; }
-
-section { padding: 100px 40px; position: relative; z-index: 1; }
-
-.section-inner { max-width: 1200px; margin: 0px auto; }
-
-.section-tag { display: inline-flex; align-items: center; gap: 8px; font-si=
-ze: 11px; color: var(--orange); letter-spacing: 0.12em; text-transform: upp=
-ercase; font-weight: 700; margin-bottom: 16px; }
-
-.section-tag::before { content: ""; width: 20px; height: 1px; background: v=
-ar(--orange); }
-
-h2 { font-family: Syne, sans-serif; font-size: clamp(32px, 4vw, 52px); font=
--weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -0.01e=
-m; }
-
-.section-desc { color: var(--muted); font-size: 17px; line-height: 1.7; max=
--width: 600px; font-weight: 300; }
-
-.modules-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 56p=
-x; margin-top: 48px; }
-
-.mod-tab { display: flex; align-items: center; gap: 8px; padding: 10px 20px=
-; border-radius: 100px; border: 1px solid var(--border); background: var(--=
-surface); color: var(--muted); font-size: 13px; font-weight: 500; cursor: p=
-ointer; transition: 0.2s; white-space: nowrap; }
-
-.mod-tab .tab-icon { font-size: 16px; }
-
-.mod-tab:hover { border-color: rgba(249, 115, 22, 0.3); color: var(--text);=
- }
-
-.mod-tab.active { background: linear-gradient(135deg, rgba(249, 115, 22, 0.=
-2), rgba(249, 115, 22, 0.05)); border-color: var(--orange); color: var(--te=
-xt); box-shadow: rgba(249, 115, 22, 0.1) 0px 0px 20px; }
-
-.module-panel { display: none; }
-
-.module-panel.active { display: block; animation: 0.4s ease 0s 1 normal non=
-e running fadeUp; }
-
-.mod-header { display: flex; align-items: flex-start; gap: 24px; margin-bot=
-tom: 48px; padding: 32px; background: var(--surface); border: 1px solid var=
-(--border); border-radius: 20px; position: relative; overflow: hidden; }
-
-.mod-header::before { content: ""; position: absolute; inset: 0px; backgrou=
-nd: linear-gradient(135deg, var(--orange-glow), transparent 60%); pointer-e=
-vents: none; }
-
-.mod-icon { width: 72px; height: 72px; border-radius: 18px; flex-shrink: 0;=
- display: flex; align-items: center; justify-content: center; font-size: 32=
-px; }
-
-.mod-header-text h3 { font-family: Syne, sans-serif; font-size: 28px; font-=
-weight: 800; margin-bottom: 8px; }
-
-.mod-header-text p { color: var(--muted); font-size: 16px; line-height: 1.7=
-; font-weight: 300; }
-
-.services-grid { display: grid; grid-template-columns: repeat(auto-fill, mi=
-nmax(300px, 1fr)); gap: 20px; }
-
-.service-card { background: var(--surface); border: 1px solid var(--border)=
-; border-radius: 16px; padding: 28px; transition: 0.3s; position: relative;=
- overflow: hidden; }
-
-.service-card::after { content: ""; position: absolute; bottom: 0px; left: =
-0px; right: 0px; height: 2px; background: linear-gradient(90deg, var(--oran=
-ge), var(--blue)); opacity: 0; transition: opacity 0.3s; }
-
-.service-card:hover { border-color: rgba(249, 115, 22, 0.25); transform: tr=
-anslateY(-4px); box-shadow: rgba(0, 0, 0, 0.4) 0px 16px 40px; }
-
-.service-card:hover::after { opacity: 1; }
-
-.card-icon { width: 48px; height: 48px; border-radius: 12px; display: flex;=
- align-items: center; justify-content: center; font-size: 22px; margin-bott=
-om: 18px; background: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, =
-115, 22, 0.2); }
-
-.card-title { font-family: Syne, sans-serif; font-size: 16px; font-weight: =
-700; margin-bottom: 10px; }
-
-.card-desc { color: var(--muted); font-size: 14px; line-height: 1.65; font-=
-weight: 300; }
-
-.card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-
-.tag { font-size: 11px; padding: 4px 10px; border-radius: 100px; background=
-: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.15); col=
-or: var(--blue); font-weight: 500; }
-
-.tag-orange { background: rgba(249, 115, 22, 0.08); border-color: rgba(249,=
- 115, 22, 0.15); color: var(--orange); }
-
-#diagnostico { background: var(--surface); }
-
-.diag-wrap { background: var(--bg2); border: 1px solid var(--border); borde=
-r-radius: 24px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 80=
-px; }
-
-.diag-top { background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%=
-, rgba(56, 189, 248, 0.08) 100%); padding: 40px 48px; border-bottom: 1px so=
-lid var(--border); display: flex; align-items: center; gap: 20px; }
-
-.diag-badge { font-family: "Bebas Neue", sans-serif; font-size: 48px; line-=
-height: 1; background-image: ; background-position-x: ; background-position=
--y: ; background-size: ; background-repeat: ; background-attachment: ; back=
-ground-origin: ; background-color: ; background-clip: text; -webkit-text-fi=
-ll-color: transparent; }
-
-.diag-top-text h3 { font-family: Syne, sans-serif; font-size: 26px; font-we=
-ight: 800; }
-
-.diag-top-text p { color: var(--muted); font-size: 15px; margin-top: 4px; }
-
-.diag-body { padding: 48px; }
-
-.prog-row { display: flex; justify-content: space-between; font-size: 13px;=
- color: var(--muted); margin-bottom: 8px; }
-
-.prog-track { height: 4px; background: rgba(255, 255, 255, 0.07); border-ra=
-dius: 4px; overflow: hidden; margin-bottom: 36px; }
-
-.prog-fill { height: 100%; border-radius: 4px; background: linear-gradient(=
-90deg, var(--orange), var(--blue)); transition: width 0.5s; }
-
-.step-dots { display: flex; gap: 6px; justify-content: center; margin-botto=
-m: 40px; }
-
-.step-dot { height: 6px; width: 6px; border-radius: 6px; background: rgba(2=
-55, 255, 255, 0.15); transition: 0.3s; }
-
-.step-dot.active { width: 24px; background: var(--orange); }
-
-.step-dot.done { background: rgba(249, 115, 22, 0.4); }
-
-.form-step { display: none; }
-
-.form-step.active { display: block; animation: 0.4s ease 0s 1 normal none r=
-unning fadeUp; }
-
-.form-step-header h4 { font-family: Syne, sans-serif; font-size: 22px; font=
--weight: 700; margin-bottom: 6px; }
-
-.form-step-header p { color: var(--muted); font-size: 14px; margin-bottom: =
-28px; }
-
-.field { margin-bottom: 20px; }
-
-.field label { display: block; font-size: 13px; color: var(--muted); margin=
--bottom: 8px; font-weight: 500; letter-spacing: 0.03em; }
-
-.field input, .field select, .field textarea { width: 100%; background: rgb=
-a(255, 255, 255, 0.04); border: 1px solid var(--border); border-radius: 10p=
-x; padding: 12px 16px; color: var(--text); font-family: "DM Sans", sans-ser=
-if; font-size: 14px; transition: border-color 0.2s; outline: none; }
-
-.field input:focus, .field select:focus, .field textarea:focus { border-col=
-or: var(--orange); box-shadow: rgba(249, 115, 22, 0.08) 0px 0px 0px 3px; }
-
-.field input::placeholder, .field textarea::placeholder { color: var(--dim)=
-; }
-
-.field select option { background: var(--surface); }
-
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-.options-list { display: flex; flex-direction: column; gap: 8px; }
-
-.option-item { display: flex; align-items: center; gap: 12px; padding: 14px=
- 16px; border: 1px solid var(--border); border-radius: 10px; cursor: pointe=
-r; transition: 0.2s; background: rgba(255, 255, 255, 0.02); }
-
-.option-item:hover { border-color: rgba(249, 115, 22, 0.3); background: rgb=
-a(249, 115, 22, 0.04); }
-
-.option-item input { accent-color: var(--orange); width: 16px; height: 16px=
-; cursor: pointer; }
-
-.option-item span { font-size: 14px; color: var(--muted); }
-
-.option-item:has(input:checked) { border-color: var(--orange); background: =
-rgba(249, 115, 22, 0.06); }
-
-.option-item:has(input:checked) span { color: var(--text); }
-
-.q-label { font-size: 14px; font-weight: 500; color: var(--text); margin-bo=
-ttom: 12px; margin-top: 24px; }
-
-.diag-nav { display: flex; justify-content: space-between; margin-top: 36px=
-; padding-top: 24px; border-top: 1px solid var(--border); }
-
-.btn-back { background: none; border: 1px solid var(--border); color: var(-=
--muted); padding: 11px 24px; border-radius: 8px; cursor: pointer; font-fami=
-ly: "DM Sans", sans-serif; font-size: 14px; transition: 0.2s; display: flex=
-; align-items: center; gap: 6px; }
-
-.btn-back:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.2=
-); }
-
-.btn-next { background: linear-gradient(135deg, var(--orange), #c2410c); co=
-lor: white; padding: 12px 28px; border-radius: 8px; border-width: medium; b=
-order-style: none; border-color: currentcolor; border-image: initial; curso=
-r: pointer; font-family: "DM Sans", sans-serif; font-size: 14px; font-weigh=
-t: 600; box-shadow: 0 0 20px var(--orange-glow); transition: 0.2s; display:=
- flex; align-items: center; gap: 8px; margin-left: auto; }
-
-.btn-next:hover { box-shadow: rgba(249, 115, 22, 0.4) 0px 0px 32px; transfo=
-rm: translateY(-1px); }
-
-#resultsPanel { display: none; animation: 0.5s ease 0s 1 normal none runnin=
-g fadeUp; }
-
-.res-score-ring { display: flex; flex-direction: column; align-items: cente=
-r; margin-bottom: 48px; }
-
-.res-score-ring svg { filter: drop-shadow(rgba(249, 115, 22, 0.4) 0px 0px 1=
-6px); }
-
-.score-label { font-family: "Bebas Neue", sans-serif; font-size: 56px; marg=
-in-top: -8px; }
-
-.score-sub { color: var(--muted); font-size: 13px; text-transform: uppercas=
-e; letter-spacing: 0.1em; }
-
-.area-scores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1=
-4px; margin-bottom: 40px; }
-
-.area-score-item { background: var(--surface2); border: 1px solid var(--bor=
-der); border-radius: 12px; padding: 16px; }
-
-.area-name { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-
-.area-bar { height: 4px; background: rgba(255, 255, 255, 0.08); border-radi=
-us: 4px; overflow: hidden; }
-
-.area-bar-fill { height: 100%; border-radius: 4px; background: linear-gradi=
-ent(90deg, var(--orange), var(--blue)); transition: width 1s; }
-
-.area-pct { font-size: 12px; color: var(--muted); margin-top: 6px; }
-
-.recs-title { font-family: Syne, sans-serif; font-size: 20px; font-weight: =
-700; margin-bottom: 24px; }
-
-.rec-block { margin-bottom: 28px; }
-
-.rec-area { font-size: 13px; font-weight: 600; color: var(--orange); margin=
--bottom: 10px; letter-spacing: 0.05em; text-transform: uppercase; }
-
-.rec-list { list-style: none; display: flex; flex-direction: column; gap: 8=
-px; }
-
-.rec-list li { display: flex; gap: 10px; font-size: 14px; color: var(--mute=
-d); align-items: flex-start; }
-
-.rec-list li::before { content: "=E2=86=92"; color: var(--orange); flex-shr=
-ink: 0; font-weight: 700; }
-
-.res-cta { background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rg=
-ba(56, 189, 248, 0.08)); border: 1px solid rgba(249, 115, 22, 0.25); border=
--radius: 16px; padding: 32px; text-align: center; margin-top: 36px; }
-
-.res-cta h4 { font-family: Syne, sans-serif; font-size: 22px; font-weight: =
-700; margin-bottom: 8px; }
-
-.res-cta p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
-
-.res-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: w=
-rap; }
-
-#contacto { background: var(--bg); }
-
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px;=
- align-items: start; }
-
-.contact-info h2 { margin-bottom: 12px; }
-
-.contact-info p { color: var(--muted); line-height: 1.7; margin-bottom: 36p=
-x; font-size: 16px; }
-
-.contact-methods { display: flex; flex-direction: column; gap: 16px; }
-
-.contact-method { display: flex; align-items: center; gap: 16px; padding: 1=
-6px; background: var(--surface); border: 1px solid var(--border); border-ra=
-dius: 12px; }
-
-.contact-method-icon { width: 44px; height: 44px; border-radius: 10px; disp=
-lay: flex; align-items: center; justify-content: center; font-size: 20px; f=
-lex-shrink: 0; }
-
-.contact-method-text strong { display: block; font-size: 14px; margin-botto=
-m: 2px; }
-
-.contact-method-text span { font-size: 13px; color: var(--muted); }
-
-.contact-method a { color: var(--orange); text-decoration: none; font-size:=
- 13px; }
-
-footer { background: var(--surface); border-top: 1px solid var(--border); p=
-adding: 40px; text-align: center; }
-
-footer p { color: var(--dim); font-size: 13px; }
-
-footer strong { color: var(--muted); }
-
-::-webkit-scrollbar { width: 6px; }
-
-::-webkit-scrollbar-track { background: var(--bg); }
-
-::-webkit-scrollbar-thumb { background: rgba(249, 115, 22, 0.3); border-rad=
-ius: 3px; }
-
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: point=
-er; padding: 8px; background: none; border-width: medium; border-style: non=
-e; border-color: currentcolor; border-image: initial; }
-
-.hamburger span { display: block; width: 24px; height: 2px; background: var=
-(--text); border-radius: 2px; transition: 0.3s; }
-
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg=
-); }
-
-.hamburger.open span:nth-child(2) { opacity: 0; }
-
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45d=
-eg); }
-
-.mobile-menu { display: none; flex-direction: column; position: fixed; top:=
- 72px; left: 0px; right: 0px; background: rgba(6, 8, 16, 0.98); backdrop-fi=
-lter: blur(20px); border-bottom: 1px solid var(--border); padding: 20px 24p=
-x 28px; z-index: 99; gap: 4px; }
-
-.mobile-menu.open { display: flex; animation: 0.25s ease 0s 1 normal none r=
-unning fadeUp; }
-
-.mobile-menu a { color: var(--muted); text-decoration: none; font-size: 16p=
-x; font-weight: 500; padding: 14px 16px; border-radius: 10px; transition: 0=
-.2s; border: 1px solid transparent; }
-
-.mobile-menu a:hover, .mobile-menu a:active { color: var(--text); backgroun=
-d: var(--surface); }
-
-.mobile-menu .nav-cta { margin-top: 8px; background: linear-gradient(135deg=
-, var(--orange), #ea580c); text-align: center; box-shadow: 0 0 20px var(--o=
-range-glow); display: block; color: white !important; font-size: 15px !impo=
-rtant; padding: 14px !important; border-radius: 10px !important; }
-
-@media (max-width: 768px) {
-  header { padding: 0px 20px; }
-  nav { display: none; }
-  .hamburger { display: flex; }
-  section { padding: 64px 20px; }
-  h1 { font-size: 48px; }
-  .stats-inner { grid-template-columns: repeat(2, 1fr); }
-  .services-grid { grid-template-columns: 1fr; }
-  .form-grid { grid-template-columns: 1fr; }
-  .area-scores { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .diag-body { padding: 28px 24px; }
-  .diag-top { padding: 24px; }
-  .hero { padding: 80px 20px; }
-  .modules-nav { gap: 6px; }
-  .mod-tab { font-size: 12px; padding: 8px 14px; }
-  .mod-header { flex-direction: column; gap: 16px; }
-  .hero-ring, .hero-ring2 { display: none; }
-}
-------MultipartBoundary--b5pcSeMH7H2iazzzRuczn01tzJBvKMQoGFy6DPuUqP------
